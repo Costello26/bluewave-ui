@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="robots" content="index, follow" />
+    <meta name="google" content="notranslate" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="" />
+    <link rel="icon" href="img/logo.png" />
+    <title>Step one</title>
+</head>
+
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__burger d-none">
+                    <img src="img/main/menu.svg" alt="burger" />
+                </div>
+                <div class="header__logo">
+                    <picture>
+                        <source srcset="img/logo.webp" type="image/webp" />
+                        <img src="img/logo.png" alt="" class="header__img" />
+                    </picture>
+                </div>
+
+                <div class="header__inner">
+                    <ul class="header__nav">
+                        <li class="header__nav-list">
+                            <a href="#"> Orders </a>
+                        </li>
+                        <li class="header__nav-list">
+                            <a href="#">Inventory</a>
+                        </li>
+                        <li class="header__nav-list">
+                            <a href="#">Backorders</a>
+                        </li>
+                        <li class="header__nav-list">
+                            <a href="#">Items</a>
+                        </li>
+                        <li class="header__nav-list others-nav">
+                            <a href="#" class="">Others <img src="img/account/arrow-down.svg" /></a>
+                            <div class="header-dropdown">
+                                <div class="header-dropdown__content">
+                                    <a href="#" class="header-dropdown__link">Download Prices</a>
+                                    <a href="#" class="header-dropdown__link">Custom Measuring Forms</a>
+                                    <a href="#" class="header-dropdown__link">Freight Information</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="header__group">
+
+                        <div class="header__user">
+                            <div class="header__icon">
+                                <picture>
+                                    <source srcset="img/header/avatar.svg" type="image/webp" />
+                                    <img src="img/header/avatar.svg" alt="" class="header__avatar" />
+                                </picture>
+                            </div>
+                            <ul class="header__name">
+                                <li class="header__user">
+                                    Abdu <img src="img/account/arrow-down.svg" />
+                                </li>
+                                <div class="header-dropdown">
+                                    <div class="header-dropdown__content">
+                                        <a href="#" class="header-dropdown__link">Personal account</a>
+                                        <a href="#" class="header-dropdown__link danger">Log out</a>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <main class="main container">
+            <div class="right">
+
+                <div class="header-company">
+                    <div class="header-company__name">Charlies wholesale</div>
+                    <div class="header-company__name">Charlies wholesale</div>
+                </div>
+            </div>
+            <header class="step">
+                <div class="step__item">
+                    <div class="step__number active">1</div>
+                    <div class="step__title">Enter <br> order</div>
+                </div>
+                <div class="step__item">
+                    <div class="step__number">2</div>
+                    <div class="step__title">Shipping <br>Information</div>
+                </div>
+                <div class="step__item">
+                    <div class="step__number">3</div>
+                    <div class="step__title">Payment <br>Information</div>
+                </div>
+                <div class="step__item">
+                    <div class="step__number">4</div>
+                    <div class="step__title">Confirm <br>order</div>
+                </div>
+            </header>
+            <div class="step-one__container container">
+                <div class="step-one__wrapper">
+                    <div class="step-one__content">
+                        <div class="po-number">
+                            <div class="po-number__title">
+                                PO Number:
+                            </div>
+                            <input type="text" placeholder="PO1234567" class="po-number__num"/>
+                        </div>
+                        <header class="step-one-header">
+                            <div class="step-one-header__content">
+                                <div class="step-one-header__row">
+                                    <h4 class="step-one-header__title">Item</h4>
+                                    <div class="step-one-header__select ">
+                                        <input class="text-input" type="search" placeholder="Search..." id="stepOneSearch">
+                                        <div class="search-options__block">
+                                            <span class="search-option__item">BH1009H</span>
+                                            <span class="search-option__item">BH1008H</span>
+                                            <span class="search-option__item">BH1007H</span>
+                                            <span class="search-option__item">BH1006H</span>
+                                            <span class="search-option__item">BH1005H</span>
+                                            <span class="search-option__item">BH1004H</span>
+                                            <span class="search-option__item">BH1003H</span>
+                                            <span class="search-option__item">BH1002H</span>
+                                            <span class="search-option__item">BH1001H</span>
+                                            <span class="search-option__item">BH1000H</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="step-one-header__row">
+                                    <h4 class="step-one-header__title" id="stepOneDesc">Description</h4>
+                                    <div class="step-one-header__input">
+                                        <input class="text-input" type="text" value="Swimming pool">
+                                    </div>
+                                </div>
+                                <div class="step-one-header__row">
+                                    <h4 class="step-one-header__title">Qty</h4>
+                                    <input type="text" placeholder="1" class="step-one-header__btn"/>
+                                </div>
+                                <div class="step-one-header__row">
+                                    <h4 class="step-one-header__title">Unit price</h4>
+                                    <input type="text" placeholder="350.00" class="step-one-header__btn"/>
+                                </div>
+                                <div class="step-one-header__row">
+                                    <h4 class="step-one-header__title">Ext. Price</h4>
+                                    <input type="text" placeholder="350.00" class="step-one-header__btn"/>
+                                </div>
+                                <div class="step-one-header__row">
+                                    <h4 class="step-one-header__title"></h4>
+                                    <a href="#" class="btn-blue">
+                                        Add
+                                    </a>
+                                </div>
+                            </div>
+
+                        </header>
+                    </div>
+                    <div class="step-one__content--sm">
+                        <div class="step-one-table">
+                            <div class="step-one-table__content">
+                                <header class="step-one-table__header">
+                                    <div class="step-one-table__row">Item #</div>
+                                    <div class="step-one-table__row">Description</div>
+                                    <div class="step-one-table__row">QTY</div>
+                                    <div class="step-one-table__row">Unit Price</div>
+                                    <div class="step-one-table__row">Ext. Price</div>
+                                </header>
+                                <div class="step-one-table__col">
+                                    <div class="step-one-table__value">Enter text</div>
+                                    <div class="step-one-table__value">Enter text</div>
+                                    <div class="step-one-table__value">1</div>
+                                    <div class="step-one-table__value">350.00</div>
+                                    <div class="step-one-table__value">350.00</div>
+                                </div>
+                                <div class="step-one-table__col">
+                                    <div class="step-one-table__value">Enter text</div>
+                                    <div class="step-one-table__value">Enter text</div>
+                                    <div class="step-one-table__value">1</div>
+                                    <div class="step-one-table__value">350.00</div>
+                                    <div class="step-one-table__value">350.00</div>
+                                </div>
+                                <div class="step-one-table__col">
+                                    <div class="step-one-table__value">Enter text</div>
+                                    <div class="step-one-table__value">Enter text</div>
+                                    <div class="step-one-table__value">1</div>
+                                    <div class="step-one-table__value">350.00</div>
+                                    <div class="step-one-table__value">350.00</div>
+                                </div>
+                                <div class="step-one-table__col">
+                                    <div class="step-one-table__value">Enter text</div>
+                                    <div class="step-one-table__value">Enter text</div>
+                                    <div class="step-one-table__value">1</div>
+                                    <div class="step-one-table__value">350.00</div>
+                                    <div class="step-one-table__value">350.00</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="right">
+                            <a href="#" class="btn-alt">
+                                <div class="btn-alt__group">
+
+                                    <div class="btn-alt__title">Subtotal:</div>
+                                    <div class="btn-alt__price">350.00</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </main>
+
+        <div class="desc-modal">
+            <div class="desc-modal__container">
+                <div class="desc-modal__window">
+                    <header class="desc-modal__header">
+                        <h3 class="desc-modal__heading">Description</h3>
+                        <img class="desc-modal__close" src="img/account/exit-icon.svg" alt="">
+                    </header>
+                    <div class="desc-modal__input-group">
+                        <input type="text" class="input-text" value="Swimmi">
+                        <button class="btn">Ok</button>
+                    </div>
+                    <div class="desc-modal__result">
+                        Swimming Pool
+                    </div>
+                    <div class="desc-modal__result">
+                        Swimming Pool
+                    </div>
+                    <div class="desc-modal__result">
+                        Swimming Pool
+                    </div>
+                    <div class="desc-modal__result">
+                        Swimming Pool
+                    </div>
+                    <div class="desc-modal__result">
+                        Swimming Pool
+                    </div>
+                    <div class="desc-modal__result">
+                        Swimming Pool
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__inner">
+                    <div class="footer__copyright">
+                        Copyright ©2020 Bluewave Products
+                    </div>
+                    <div class="footer__address">
+                        1745 Wallace Ave., St. Charles, IL 60174
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

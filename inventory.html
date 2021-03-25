@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+
+  <!-- Useful meta tags -->
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="robots" content="index, follow" />
+  <meta name="google" content="notranslate" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="description" content="" />
+  <link rel="icon" href="img/logo.png" />
+  <title>Inventory - Blue Wave</title>
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__burger d-none">
+          <img src="img/main/menu.svg" alt="burger" />
+        </div>
+        <div class="header__logo">
+          <picture>
+            <source srcset="img/logo.webp" type="image/webp" />
+            <img src="img/logo.png" alt="" class="header__img" />
+          </picture>
+        </div>
+
+        <div class="header__inner">
+          <ul class="header__nav">
+            <li class="header__nav-list">
+              <a href="#"> Orders </a>
+            </li>
+            <li class="header__nav-list">
+              <a href="#">Inventory</a>
+            </li>
+            <li class="header__nav-list">
+              <a href="#">Backorders</a>
+            </li>
+            <li class="header__nav-list">
+              <a href="#">Items</a>
+            </li>
+            <li class="header__nav-list others-nav">
+              <a href="#" class="">Others <img src="img/account/arrow-down.svg" /></a>
+              <div class="header-dropdown">
+                <div class="header-dropdown__content">
+                  <a href="#" class="header-dropdown__link">Download Prices</a>
+                  <a href="#" class="header-dropdown__link">Custom Measuring Forms</a>
+                  <a href="#" class="header-dropdown__link">Freight Information</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="header__group">
+
+            <div class="header__user">
+              <div class="header__icon">
+                <picture>
+                  <source srcset="img/header/avatar.svg" type="image/webp" />
+                  <img src="img/header/avatar.svg" alt="" class="header__avatar" />
+                </picture>
+              </div>
+              <ul class="header__name">
+                <li class="header__user">
+                  Abdu <img src="img/account/arrow-down.svg" />
+                </li>
+                <div class="header-dropdown">
+                  <div class="header-dropdown__content">
+                    <a href="#" class="header-dropdown__link">Personal account</a>
+                    <a href="#" class="header-dropdown__link danger">Log out</a>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="inventory main">
+
+      <div class="container">
+        <div class="right">
+
+          <div class="header-company">
+            <div class="header-company__name">Charlies wholesale</div>
+            <div class="header-company__name">Charlies wholesale</div>
+          </div>
+        </div>
+        <div class="inventory__top">
+          <form action="/" class="inventory__form">
+            <input type="text" placeholder="Search..." class="inventory__form-search" />
+            <button class="inventory__btn">
+              <picture>
+                <source srcset="img/inventory/search.svg" type="image/webp" />
+                <img src="img/inventory/search.svg" alt="Search icon" class="inventory__form-button" /></picture>
+            </button>
+          </form>
+
+          <div class="inventory__top-buttons">
+            <a href="#" class="inventory__top-link">
+              <picture>
+                <source srcset="img/inventory/print.svg" type="image/webp" />
+                <img src="img/inventory/print.svg" alt="" class="inventory__top-icon" /></picture>
+            </a>
+            <a href="#" class="inventory__top-link">
+              <picture>
+                <source srcset="img/inventory/csv.svg" type="image/webp" />
+                <img src="img/inventory/csv.svg" alt="" class="inventory__top-icon" /></picture>
+            </a>
+            <a href="#" class="inventory__top-link">
+              <picture>
+                <source srcset="img/inventory/pdf.svg" type="image/webp" />
+                <img src="img/inventory/pdf.svg" alt="" class="inventory__top-icon" /></picture>
+            </a>
+          </div>
+        </div>
+
+        <div class="inventory__window">
+          <div class="inventory__title">inventory</div>
+
+          <div class="inventory__header">
+            <div class="inventory__header-item">
+              <div class="inventory__header-title">item number</div>
+              <form action="/">
+                <input type="text" class="inventory__header-search" placeholder="Search..." />
+              </form>
+            </div>
+
+            <div class="inventory__header-item">
+              <div class="inventory__header-title">description</div>
+              <form action="/">
+                <input type="text" class="inventory__header-search" placeholder="Search..." />
+              </form>
+            </div>
+
+            <div class="inventory__header-item">
+              <div class="inventory__header-title">qty. on hand</div>
+              <form action="/">
+                <input type="text" class="inventory__header-search" placeholder="Search..." />
+              </form>
+            </div>
+
+            <div class="inventory__header-item">
+              <div class="inventory__header-title">qty. on order</div>
+              <form action="/">
+                <input type="text" class="inventory__header-search" placeholder="Search..." />
+              </form>
+            </div>
+
+            <div class="inventory__header-item">
+              <div class="inventory__header-title">expected date</div>
+              <form action="/">
+                <input type="text" class="inventory__header-search" placeholder="Search..." />
+              </form>
+            </div>
+
+            <div class="inventory__header-item">
+              <div class="inventory__header-title">price</div>
+              <form action="/">
+                <input type="text" class="inventory__header-search" placeholder="Search..." />
+              </form>
+            </div>
+
+            <div class="inventory__header-item">
+              <div class="inventory__header-title">status</div>
+              <form action="/">
+                <input type="text" class="inventory__header-search" placeholder="Search..." />
+              </form>
+            </div>
+          </div>
+
+          <div class="inventory__body">
+            <div class="inventory__body-list">
+              <span class="inventory__body-item">bg1005</span>
+              <span class="inventory__body-item">4 strikes & puck set</span>
+              <span class="inventory__body-item">1007.00</span>
+              <span class="inventory__body-item">.000000</span>
+              <span class="inventory__body-item">xx.xx.xxxx</span>
+              <span class="inventory__body-item">6.36000</span>
+              <span class="inventory__body-item">enabled</span>
+            </div>
+
+            <div class="inventory__body-list">
+              <span class="inventory__body-item">bg1005</span>
+              <span class="inventory__body-item">4 strikes & puck set</span>
+              <span class="inventory__body-item">1007.00</span>
+              <span class="inventory__body-item">.000000</span>
+              <span class="inventory__body-item">xx.xx.xxxx</span>
+              <span class="inventory__body-item">6.36000</span>
+              <span class="inventory__body-item">enabled</span>
+            </div>
+
+            <div class="inventory__body-list">
+              <span class="inventory__body-item">bg1005</span>
+              <span class="inventory__body-item">4 strikes & puck set</span>
+              <span class="inventory__body-item">1007.00</span>
+              <span class="inventory__body-item">.000000</span>
+              <span class="inventory__body-item">xx.xx.xxxx</span>
+              <span class="inventory__body-item">6.36000</span>
+              <span class="inventory__body-item">enabled</span>
+            </div>
+
+            <div class="inventory__body-list">
+              <span class="inventory__body-item">bg1005</span>
+              <span class="inventory__body-item">4 strikes & puck set</span>
+              <span class="inventory__body-item">1007.00</span>
+              <span class="inventory__body-item">.000000</span>
+              <span class="inventory__body-item">xx.xx.xxxx</span>
+              <span class="inventory__body-item">6.36000</span>
+              <span class="inventory__body-item">enabled</span>
+            </div>
+
+            <div class="inventory__body-list">
+              <span class="inventory__body-item">bg1005</span>
+              <span class="inventory__body-item">4 strikes & puck set</span>
+              <span class="inventory__body-item">1007.00</span>
+              <span class="inventory__body-item">.000000</span>
+              <span class="inventory__body-item">xx.xx.xxxx</span>
+              <span class="inventory__body-item">6.36000</span>
+              <span class="inventory__body-item">enabled</span>
+            </div>
+
+            <div class="inventory__body-list">
+              <span class="inventory__body-item">bg1005</span>
+              <span class="inventory__body-item">4 strikes & puck set</span>
+              <span class="inventory__body-item">1007.00</span>
+              <span class="inventory__body-item">.000000</span>
+              <span class="inventory__body-item">xx.xx.xxxx</span>
+              <span class="inventory__body-item">6.36000</span>
+              <span class="inventory__body-item">enabled</span>
+            </div>
+
+            <div class="inventory__body-list">
+              <span class="inventory__body-item">bg1005</span>
+              <span class="inventory__body-item">4 strikes & puck set</span>
+              <span class="inventory__body-item">1007.00</span>
+              <span class="inventory__body-item">.000000</span>
+              <span class="inventory__body-item">xx.xx.xxxx</span>
+              <span class="inventory__body-item">6.36000</span>
+              <span class="inventory__body-item">enabled</span>
+            </div>
+
+            <div class="inventory__body-list">
+              <span class="inventory__body-item">bg1005</span>
+              <span class="inventory__body-item">4 strikes & puck set</span>
+              <span class="inventory__body-item">1007.00</span>
+              <span class="inventory__body-item">.000000</span>
+              <span class="inventory__body-item">xx.xx.xxxx</span>
+              <span class="inventory__body-item">6.36000</span>
+              <span class="inventory__body-item">enabled</span>
+            </div>
+
+            <div class="inventory__body-list">
+              <span class="inventory__body-item">bg1005</span>
+              <span class="inventory__body-item">4 strikes & puck set</span>
+              <span class="inventory__body-item">1007.00</span>
+              <span class="inventory__body-item">.000000</span>
+              <span class="inventory__body-item">xx.xx.xxxx</span>
+              <span class="inventory__body-item">6.36000</span>
+              <span class="inventory__body-item">enabled</span>
+            </div>
+
+            <div class="inventory__body-list">
+              <span class="inventory__body-item">bg1005</span>
+              <span class="inventory__body-item">4 strikes & puck set</span>
+              <span class="inventory__body-item">1007.00</span>
+              <span class="inventory__body-item">.000000</span>
+              <span class="inventory__body-item">xx.xx.xxxx</span>
+              <span class="inventory__body-item">6.36000</span>
+              <span class="inventory__body-item">enabled</span>
+            </div>
+
+            <div class="inventory__body-list">
+              <span class="inventory__body-item">bg1005</span>
+              <span class="inventory__body-item">4 strikes & puck set</span>
+              <span class="inventory__body-item">1007.00</span>
+              <span class="inventory__body-item">.000000</span>
+              <span class="inventory__body-item">xx.xx.xxxx</span>
+              <span class="inventory__body-item">6.36000</span>
+              <span class="inventory__body-item">enabled</span>
+            </div>
+
+            <div class="inventory__body-list">
+              <span class="inventory__body-item">bg1005</span>
+              <span class="inventory__body-item">4 strikes & puck set</span>
+              <span class="inventory__body-item">1007.00</span>
+              <span class="inventory__body-item">.000000</span>
+              <span class="inventory__body-item">xx.xx.xxxx</span>
+              <span class="inventory__body-item">6.36000</span>
+              <span class="inventory__body-item">enabled</span>
+            </div>
+
+            <div class="inventory__body-list">
+              <span class="inventory__body-item">bg1005</span>
+              <span class="inventory__body-item">4 strikes & puck set</span>
+              <span class="inventory__body-item">1007.00</span>
+              <span class="inventory__body-item">.000000</span>
+              <span class="inventory__body-item">xx.xx.xxxx</span>
+              <span class="inventory__body-item">6.36000</span>
+              <span class="inventory__body-item">enabled</span>
+            </div>
+
+            <div class="inventory__body-list">
+              <span class="inventory__body-item">bg1005</span>
+              <span class="inventory__body-item">4 strikes & puck set</span>
+              <span class="inventory__body-item">1007.00</span>
+              <span class="inventory__body-item">.000000</span>
+              <span class="inventory__body-item">xx.xx.xxxx</span>
+              <span class="inventory__body-item">6.36000</span>
+              <span class="inventory__body-item">enabled</span>
+            </div>
+
+            <div class="inventory__body-list">
+              <span class="inventory__body-item">bg1005</span>
+              <span class="inventory__body-item">4 strikes & puck set</span>
+              <span class="inventory__body-item">1007.00</span>
+              <span class="inventory__body-item">.000000</span>
+              <span class="inventory__body-item">xx.xx.xxxx</span>
+              <span class="inventory__body-item">6.36000</span>
+              <span class="inventory__body-item">enabled</span>
+            </div>
+
+            <div class="inventory__body-list">
+              <span class="inventory__body-item">bg1005</span>
+              <span class="inventory__body-item">4 strikes & puck set</span>
+              <span class="inventory__body-item">1007.00</span>
+              <span class="inventory__body-item">.000000</span>
+              <span class="inventory__body-item">xx.xx.xxxx</span>
+              <span class="inventory__body-item">6.36000</span>
+              <span class="inventory__body-item">enabled</span>
+            </div>
+
+            <div class="inventory__body-list">
+              <span class="inventory__body-item">bg1005</span>
+              <span class="inventory__body-item">4 strikes & puck set</span>
+              <span class="inventory__body-item">1007.00</span>
+              <span class="inventory__body-item">.000000</span>
+              <span class="inventory__body-item">xx.xx.xxxx</span>
+              <span class="inventory__body-item">6.36000</span>
+              <span class="inventory__body-item">enabled</span>
+            </div>
+
+            <div class="inventory__body-list">
+              <span class="inventory__body-item">bg1005</span>
+              <span class="inventory__body-item">4 strikes & puck set</span>
+              <span class="inventory__body-item">1007.00</span>
+              <span class="inventory__body-item">.000000</span>
+              <span class="inventory__body-item">xx.xx.xxxx</span>
+              <span class="inventory__body-item">6.36000</span>
+              <span class="inventory__body-item">enabled</span>
+            </div>
+
+            <div class="inventory__body-list">
+              <span class="inventory__body-item">bg1005</span>
+              <span class="inventory__body-item">4 strikes & puck set</span>
+              <span class="inventory__body-item">1007.00</span>
+              <span class="inventory__body-item">.000000</span>
+              <span class="inventory__body-item">xx.xx.xxxx</span>
+              <span class="inventory__body-item">6.36000</span>
+              <span class="inventory__body-item">enabled</span>
+            </div>
+
+            <div class="inventory__body-list">
+              <span class="inventory__body-item">bg1005</span>
+              <span class="inventory__body-item">4 strikes & puck set</span>
+              <span class="inventory__body-item">1007.00</span>
+              <span class="inventory__body-item">.000000</span>
+              <span class="inventory__body-item">xx.xx.xxxx</span>
+              <span class="inventory__body-item">6.36000</span>
+              <span class="inventory__body-item">enabled</span>
+            </div>
+
+            <div class="inventory__body-list">
+              <span class="inventory__body-item">bg1005</span>
+              <span class="inventory__body-item">4 strikes & puck set</span>
+              <span class="inventory__body-item">1007.00</span>
+              <span class="inventory__body-item">.000000</span>
+              <span class="inventory__body-item">xx.xx.xxxx</span>
+              <span class="inventory__body-item">6.36000</span>
+              <span class="inventory__body-item">enabled</span>
+            </div>
+
+            <div class="inventory__body-list">
+              <span class="inventory__body-item">bg1005</span>
+              <span class="inventory__body-item">4 strikes & puck set</span>
+              <span class="inventory__body-item">1007.00</span>
+              <span class="inventory__body-item">.000000</span>
+              <span class="inventory__body-item">xx.xx.xxxx</span>
+              <span class="inventory__body-item">6.36000</span>
+              <span class="inventory__body-item">enabled</span>
+            </div>
+
+            <div class="inventory__body-list">
+              <span class="inventory__body-item">bg1005</span>
+              <span class="inventory__body-item">4 strikes & puck set</span>
+              <span class="inventory__body-item">1007.00</span>
+              <span class="inventory__body-item">.000000</span>
+              <span class="inventory__body-item">xx.xx.xxxx</span>
+              <span class="inventory__body-item">6.36000</span>
+              <span class="inventory__body-item">enabled</span>
+            </div>
+
+            <div class="inventory__body-list">
+              <span class="inventory__body-item">bg1005</span>
+              <span class="inventory__body-item">4 strikes & puck set</span>
+              <span class="inventory__body-item">1007.00</span>
+              <span class="inventory__body-item">.000000</span>
+              <span class="inventory__body-item">xx.xx.xxxx</span>
+              <span class="inventory__body-item">6.36000</span>
+              <span class="inventory__body-item">enabled</span>
+            </div>
+
+            <div class="inventory__body-list">
+              <span class="inventory__body-item">bg1005</span>
+              <span class="inventory__body-item">4 strikes & puck set</span>
+              <span class="inventory__body-item">1007.00</span>
+              <span class="inventory__body-item">.000000</span>
+              <span class="inventory__body-item">xx.xx.xxxx</span>
+              <span class="inventory__body-item">6.36000</span>
+              <span class="inventory__body-item">enabled</span>
+            </div>
+
+            <div class="inventory__body-list">
+              <span class="inventory__body-item">bg1005</span>
+              <span class="inventory__body-item">4 strikes & puck set</span>
+              <span class="inventory__body-item">1007.00</span>
+              <span class="inventory__body-item">.000000</span>
+              <span class="inventory__body-item">xx.xx.xxxx</span>
+              <span class="inventory__body-item">6.36000</span>
+              <span class="inventory__body-item">enabled</span>
+            </div>
+          </div>
+
+          <div class="inventory__footer">
+            <div class="inventory__footer-info">
+              Showing 1 to 50 of 3 674 entries
+            </div>
+            <div class="inventory__footer-pages">
+              <a href="#" class="inventory__footer-prev">previous</a>
+
+              <a href="#" class="inventory__footer-counts active">1</a>
+              <a href="#" class="inventory__footer-counts">2</a>
+              <a href="#" class="inventory__footer-counts">3</a>
+              <a href="#" class="inventory__footer-counts">4</a>
+              <a href="#" class="inventory__footer-counts">5</a>
+              <div>...</div>
+              <a href="#" class="inventory__footer-counts">74</a>
+
+              <a href="#" class="inventory__footer-next">next</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__inner">
+          <div class="footer__copyright">
+            Copyright ©2020 Bluewave Products
+          </div>
+          <div class="footer__address">
+            1745 Wallace Ave., St. Charles, IL 60174
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/script.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

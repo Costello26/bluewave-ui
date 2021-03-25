@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <!-- Useful meta tags -->
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="robots" content="index, follow" />
+  <meta name="google" content="notranslate" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="description" content="" />
+  <link rel="icon" href="img/logo.png" />
+  <title>Orders - Blue Wave</title>
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__burger d-none">
+          <img src="img/main/menu.svg" alt="burger" />
+        </div>
+        <div class="header__logo">
+          <picture>
+            <source srcset="img/logo.webp" type="image/webp" />
+            <img src="img/logo.png" alt="" class="header__img" />
+          </picture>
+        </div>
+
+        <div class="header__inner">
+          <ul class="header__nav">
+            <li class="header__nav-list">
+              <a href="#"> Orders </a>
+            </li>
+            <li class="header__nav-list">
+              <a href="#">Inventory</a>
+            </li>
+            <li class="header__nav-list">
+              <a href="#">Backorders</a>
+            </li>
+            <li class="header__nav-list">
+              <a href="#">Items</a>
+            </li>
+            <li class="header__nav-list others-nav">
+              <a href="#" class="">Others <img src="img/account/arrow-down.svg" /></a>
+              <div class="header-dropdown">
+                <div class="header-dropdown__content">
+                  <a href="#" class="header-dropdown__link">Download Prices</a>
+                  <a href="#" class="header-dropdown__link">Custom Measuring Forms</a>
+                  <a href="#" class="header-dropdown__link">Freight Information</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="header__group">
+
+            <div class="header__user">
+              <div class="header__icon">
+                <picture>
+                  <source srcset="img/header/avatar.svg" type="image/webp" />
+                  <img src="img/header/avatar.svg" alt="" class="header__avatar" />
+                </picture>
+              </div>
+              <ul class="header__name">
+                <li class="header__user">
+                  Abdu <img src="img/account/arrow-down.svg" />
+                </li>
+                <div class="header-dropdown">
+                  <div class="header-dropdown__content">
+                    <a href="#" class="header-dropdown__link">Personal account</a>
+                    <a href="#" class="header-dropdown__link danger">Log out</a>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="orders main">
+      <div class="container">
+        <div class="right">
+
+          <div class="header-company">
+            <div class="header-company__name">Charlies wholesale</div>
+            <div class="header-company__name">Charlies wholesale</div>
+          </div>
+        </div>
+        <div class="ordersModal">
+          <div class="ordersModal__overlay">
+            <div class="ordersModal__window">
+              <div class="ordersModal__title">
+                <div class="ordersModal__header">
+                  <div>Order #: 2429968</div>
+                  <div>
+                    <button class="cancel-btn">
+                      <picture>
+                        <source srcset="img/orders/cancel.svg" type="image/webp" />
+                        <img src="img/orders/cancel.svg" type="image/webp" alt="" />
+                      </picture>
+                      cancel
+                    </button>
+                    <a href="#" class="print-btn">
+                      <picture>
+                        <source srcset="img/orders/print.svg" type="image/webp" />
+                        <img src="img/orders/print.svg" type="image/webp" alt="" />
+                      </picture>
+                      print
+                    </a>
+                  </div>
+                </div>
+                <picture>
+                  <source srcset="img/orders/close.svg" type="image/webp" />
+                  <img src="img/orders/close.svg" alt="Close" class="ordersModal__close" />
+                </picture>
+              </div>
+
+              <div class="ordersModal__top">
+                <div class="ordersModal__top-item">
+                  <div class="ordersModal__top-title">
+                    <span>po#:</span>
+                    <span>10608</span>
+                  </div>
+                  <div class="ordersModal__top-date">
+                    <span>order date:</span>
+                    <span>05-30-2019</span>
+                  </div>
+                </div>
+
+                <div class="ordersModal__top-item">
+                  <div class="ordersModal__top-info">
+                    <div class="ordersModal__top-card">Ship to</div>
+
+                    <p>Erin Keller</p>
+                    <p>2200 4th Ave # 114</p>
+                    <p>Canyon, TX 790154030</p>
+                  </div>
+
+                  <div class="ordersModal__top-wrapper">
+                    <div class="ordersModal__top-status">
+                      <span>status:</span>
+                      <span>shipped</span>
+                    </div>
+
+                    <div class="ordersModal__top-tracking">
+                      <div class="ordersModal__top-trackingTitle">
+                        <span>date shipped:</span>
+                        <span>shipped method:</span>
+                        <span>tracking/pro#:</span>
+                        <span>weight:</span>
+                      </div>
+                      <div class="ordersModal__top-trackingRows">
+                        <span>05/29/2019</span>
+                        <span>Fedex Home Dilevery</span>
+                        <span>101637474245</span>
+                        <span>17.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ordersModal__body">
+                <div class="ordersModal__body-title">
+                  <div>line#</div>
+                  <div>item#</div>
+                  <div>description</div>
+                  <div>qty</div>
+                  <div>unite price</div>
+                  <div>extended price</div>
+                </div>
+                <div class="ordersModal__body-rows">
+                  <div>0</div>
+                  <div>frt_prusa</div>
+                  <div>freight charge parcel to usa</div>
+                  <div>1</div>
+                  <div>.00</div>
+                  <div>.00</div>
+                </div>
+                <div class="ordersModal__body-rows">
+                  <div>0</div>
+                  <div>nl122</div>
+                  <div>18rd gorilla pad</div>
+                  <div>1</div>
+                  <div>52.78</div>
+                  <div>52.78</div>
+                </div>
+
+                <div class="ordersModal__body-rows">
+                  <div>0</div>
+                  <div>svc_ccchg</div>
+                  <div>freight charge parcel to usa</div>
+                  <div>1</div>
+                  <div>1.73</div>
+                  <div>1.73</div>
+                </div>
+              </div>
+
+              <div class="ordersModal__footer">
+                <div class="ordersModal__footer-wrapper">
+                  <div class="ordersModal__footer-item">
+                    <span class="ordersModal__footer-text">subtotal</span>
+                    <span class="ordersModal__footer-number">54.51</span>
+                  </div>
+
+                  <div class="ordersModal__footer-item">
+                    <span class="ordersModal__footer-text">freight</span>
+                    <span class="ordersModal__footer-number">0.00</span>
+                  </div>
+
+                  <div class="ordersModal__footer-item">
+                    <span class="ordersModal__footer-text">tax</span>
+                    <span class="ordersModal__footer-number">0.00</span>
+                  </div>
+
+                  <div class="ordersModal__footer-item">
+                    <span class="ordersModal__footer-text">total</span>
+                    <span class="ordersModal__footer-number">59.51</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="orders__top">
+          <form action="/" class="orders__form">
+            <input type="text" placeholder="Search..." class="orders__form-search" />
+            <button class="orders__btn">
+              <picture>
+                <source srcset="img/orders/search.svg" type="image/webp" />
+                <img src="img/orders/search.svg" alt="Search icon" class="orders__form-button" />
+              </picture>
+            </button>
+          </form>
+
+          <div class="orders__top-buttons">
+            <a href="#" class="orders__top-link">
+              <picture>
+                <source srcset="img/orders/print.svg" type="image/webp" />
+                <img src="img/orders/print.svg" alt="" class="orders__top-icon" />
+              </picture>
+            </a>
+            <a href="#" class="orders__top-link">
+              <picture>
+                <source srcset="img/orders/csv.svg" type="image/webp" />
+                <img src="img/orders/csv.svg" alt="" class="orders__top-icon" />
+              </picture>
+            </a>
+            <a href="#" class="orders__top-link">
+              <picture>
+                <source srcset="img/orders/pdf.svg" type="image/webp" />
+                <img src="img/orders/pdf.svg" alt="" class="orders__top-icon" />
+              </picture>
+            </a>
+            <a href="#" class="orders__top-btns add__order">add order</a>
+            <a href="#" class="orders__top-btns manage__imports">manage imports</a>
+          </div>
+        </div>
+
+        <div class="orders__window">
+          <div class="orders__title">orders</div>
+
+          <div class="orders__header">
+            <div class="orders__header-item">
+              <div class="orders__header-title po-number">po number</div>
+              <form action="/">
+                <input type="text" class="orders__header-search" placeholder="Search..." />
+              </form>
+            </div>
+
+            <div class="orders__header-item">
+              <div class="orders__header-title">order date</div>
+              <form action="/">
+                <input type="text" class="orders__header-search" placeholder="Search..." />
+              </form>
+            </div>
+
+            <div class="orders__header-item">
+              <div class="orders__header-title">ship to</div>
+              <form action="/">
+                <input type="text" class="orders__header-search" placeholder="Search..." />
+              </form>
+            </div>
+
+            <div class="orders__header-item">
+              <div class="orders__header-title">zip code</div>
+              <form action="/">
+                <input type="text" class="orders__header-search" placeholder="Search..." />
+              </form>
+            </div>
+
+            <div class="orders__header-item">
+              <div class="orders__header-title">status</div>
+              <form action="/">
+                <input type="text" class="orders__header-search" placeholder="Search..." />
+              </form>
+            </div>
+          </div>
+
+          <div class="orders__body">
+            <div class="orders__body-list">
+              <span class="orders__body-item">10608</span>
+              <span class="orders__body-item">02-14-2020</span>
+              <span class="orders__body-item">jim pruit</span>
+              <span class="orders__body-item">75087</span>
+              <span class="orders__body-item">canportal</span>
+            </div>
+
+            <div class="orders__body-list">
+              <span class="orders__body-item">10608</span>
+              <span class="orders__body-item">02-14-2020</span>
+              <span class="orders__body-item">jim pruit</span>
+              <span class="orders__body-item">75087</span>
+              <span class="orders__body-item">hold_hewprod</span>
+            </div>
+
+            <div class="orders__body-list">
+              <span class="orders__body-item">10608</span>
+              <span class="orders__body-item">02-14-2020</span>
+              <span class="orders__body-item">jim pruit</span>
+              <span class="orders__body-item">75087</span>
+              <span class="orders__body-item">75087</span>
+            </div>
+
+            <div class="orders__body-list">
+              <span class="orders__body-item">10608</span>
+              <span class="orders__body-item">02-14-2020</span>
+              <span class="orders__body-item">jim pruit</span>
+              <span class="orders__body-item">75087</span>
+              <span class="orders__body-item">75087</span>
+            </div>
+
+            <div class="orders__body-list">
+              <span class="orders__body-item">10608</span>
+              <span class="orders__body-item">02-14-2020</span>
+              <span class="orders__body-item">jim pruit</span>
+              <span class="orders__body-item">75087</span>
+              <span class="orders__body-item">75087</span>
+            </div>
+
+            <div class="orders__body-list">
+              <span class="orders__body-item">10608</span>
+              <span class="orders__body-item">02-14-2020</span>
+              <span class="orders__body-item">jim pruit</span>
+              <span class="orders__body-item">75087</span>
+              <span class="orders__body-item">75087</span>
+            </div>
+
+            <div class="orders__body-list">
+              <span class="orders__body-item">10608</span>
+              <span class="orders__body-item">02-14-2020</span>
+              <span class="orders__body-item">jim pruit</span>
+              <span class="orders__body-item">75087</span>
+              <span class="orders__body-item">75087</span>
+            </div>
+
+            <div class="orders__body-list">
+              <span class="orders__body-item">10608</span>
+              <span class="orders__body-item">02-14-2020</span>
+              <span class="orders__body-item">jim pruit</span>
+              <span class="orders__body-item">75087</span>
+              <span class="orders__body-item">canportal</span>
+            </div>
+
+            <div class="orders__body-list">
+              <span class="orders__body-item">10608</span>
+              <span class="orders__body-item">02-14-2020</span>
+              <span class="orders__body-item">jim pruit</span>
+              <span class="orders__body-item">75087</span>
+              <span class="orders__body-item">hold_hewprod</span>
+            </div>
+
+            <div class="orders__body-list">
+              <span class="orders__body-item">10608</span>
+              <span class="orders__body-item">02-14-2020</span>
+              <span class="orders__body-item">jim pruit</span>
+              <span class="orders__body-item">75087</span>
+              <span class="orders__body-item">75087</span>
+            </div>
+
+            <div class="orders__body-list">
+              <span class="orders__body-item">10608</span>
+              <span class="orders__body-item">02-14-2020</span>
+              <span class="orders__body-item">jim pruit</span>
+              <span class="orders__body-item">75087</span>
+              <span class="orders__body-item">75087</span>
+            </div>
+
+            <div class="orders__body-list">
+              <span class="orders__body-item">10608</span>
+              <span class="orders__body-item">02-14-2020</span>
+              <span class="orders__body-item">jim pruit</span>
+              <span class="orders__body-item">75087</span>
+              <span class="orders__body-item">75087</span>
+            </div>
+
+            <div class="orders__body-list">
+              <span class="orders__body-item">10608</span>
+              <span class="orders__body-item">02-14-2020</span>
+              <span class="orders__body-item">jim pruit</span>
+              <span class="orders__body-item">75087</span>
+              <span class="orders__body-item">75087</span>
+            </div>
+
+            <div class="orders__body-list">
+              <span class="orders__body-item">10608</span>
+              <span class="orders__body-item">02-14-2020</span>
+              <span class="orders__body-item">jim pruit</span>
+              <span class="orders__body-item">75087</span>
+              <span class="orders__body-item">75087</span>
+            </div>
+
+            <div class="orders__body-list">
+              <span class="orders__body-item">10608</span>
+              <span class="orders__body-item">02-14-2020</span>
+              <span class="orders__body-item">jim pruit</span>
+              <span class="orders__body-item">75087</span>
+              <span class="orders__body-item">75087</span>
+            </div>
+
+            <div class="orders__body-list">
+              <span class="orders__body-item">10608</span>
+              <span class="orders__body-item">02-14-2020</span>
+              <span class="orders__body-item">jim pruit</span>
+              <span class="orders__body-item">75087</span>
+              <span class="orders__body-item">75087</span>
+            </div>
+
+            <div class="orders__body-list">
+              <span class="orders__body-item">10608</span>
+              <span class="orders__body-item">02-14-2020</span>
+              <span class="orders__body-item">jim pruit</span>
+              <span class="orders__body-item">75087</span>
+              <span class="orders__body-item">hold_newprod</span>
+            </div>
+
+            <div class="orders__body-list">
+              <span class="orders__body-item">10608</span>
+              <span class="orders__body-item">02-14-2020</span>
+              <span class="orders__body-item">jim pruit</span>
+              <span class="orders__body-item">75087</span>
+              <span class="orders__body-item">75087</span>
+            </div>
+
+            <div class="orders__body-list">
+              <span class="orders__body-item">10608</span>
+              <span class="orders__body-item">02-14-2020</span>
+              <span class="orders__body-item">jim pruit</span>
+              <span class="orders__body-item">75087</span>
+              <span class="orders__body-item">75087</span>
+            </div>
+
+            <div class="orders__body-list">
+              <span class="orders__body-item">10608</span>
+              <span class="orders__body-item">02-14-2020</span>
+              <span class="orders__body-item">jim pruit</span>
+              <span class="orders__body-item">75087</span>
+              <span class="orders__body-item">75087</span>
+            </div>
+
+            <div class="orders__body-list">
+              <span class="orders__body-item">10608</span>
+              <span class="orders__body-item">02-14-2020</span>
+              <span class="orders__body-item">jim pruit</span>
+              <span class="orders__body-item">75087</span>
+              <span class="orders__body-item">75087</span>
+            </div>
+
+            <div class="orders__body-list">
+              <span class="orders__body-item">10608</span>
+              <span class="orders__body-item">02-14-2020</span>
+              <span class="orders__body-item">jim pruit</span>
+              <span class="orders__body-item">75087</span>
+              <span class="orders__body-item">75087</span>
+            </div>
+
+            <div class="orders__body-list">
+              <span class="orders__body-item">10608</span>
+              <span class="orders__body-item">02-14-2020</span>
+              <span class="orders__body-item">jim pruit</span>
+              <span class="orders__body-item">75087</span>
+              <span class="orders__body-item">75087</span>
+            </div>
+
+            <div class="orders__body-list">
+              <span class="orders__body-item">10608</span>
+              <span class="orders__body-item">02-14-2020</span>
+              <span class="orders__body-item">jim pruit</span>
+              <span class="orders__body-item">75087</span>
+              <span class="orders__body-item">75087</span>
+            </div>
+
+            <div class="orders__body-list">
+              <span class="orders__body-item">10608</span>
+              <span class="orders__body-item">02-14-2020</span>
+              <span class="orders__body-item">jim pruit</span>
+              <span class="orders__body-item">75087</span>
+              <span class="orders__body-item">75087</span>
+            </div>
+
+            <div class="orders__body-list">
+              <span class="orders__body-item">10608</span>
+              <span class="orders__body-item">02-14-2020</span>
+              <span class="orders__body-item">jim pruit</span>
+              <span class="orders__body-item">75087</span>
+              <span class="orders__body-item">75087</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__inner">
+          <div class="footer__copyright">
+            Copyright ©2020 Bluewave Products
+          </div>
+          <div class="footer__address">
+            1745 Wallace Ave., St. Charles, IL 60174
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/script.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

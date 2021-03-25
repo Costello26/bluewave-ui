@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/new.css" />
+  <!-- Useful meta tags -->
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="robots" content="index, follow" />
+  <meta name="google" content="notranslate" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="description" content="" />
+  <link rel="icon" href="img/logo.png" />
+  <title>Orders Import - Blue Wave</title>
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__burger d-none">
+          <img src="img/main/menu.svg" alt="burger" />
+        </div>
+        <div class="header__logo">
+          <picture>
+            <source srcset="img/logo.webp" type="image/webp" />
+            <img src="img/logo.png" alt="" class="header__img" />
+          </picture>
+        </div>
+
+        <div class="header__inner">
+          <ul class="header__nav">
+            <li class="header__nav-list">
+              <a href="#"> Orders </a>
+            </li>
+            <li class="header__nav-list">
+              <a href="#">Inventory</a>
+            </li>
+            <li class="header__nav-list">
+              <a href="#">Backorders</a>
+            </li>
+            <li class="header__nav-list">
+              <a href="#">Items</a>
+            </li>
+            <li class="header__nav-list others-nav">
+              <a href="#" class="">Others <img src="img/account/arrow-down.svg" /></a>
+              <div class="header-dropdown">
+                <div class="header-dropdown__content">
+                  <a href="#" class="header-dropdown__link">Download Prices</a>
+                  <a href="#" class="header-dropdown__link">Custom Measuring Forms</a>
+                  <a href="#" class="header-dropdown__link">Freight Information</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="header__group">
+
+            <div class="header__user">
+              <div class="header__icon">
+                <picture>
+                  <source srcset="img/header/avatar.svg" type="image/webp" />
+                  <img src="img/header/avatar.svg" alt="" class="header__avatar" />
+                </picture>
+              </div>
+              <ul class="header__name">
+                <li class="header__user">
+                  Abdu <img src="img/account/arrow-down.svg" />
+                </li>
+                <div class="header-dropdown">
+                  <div class="header-dropdown__content">
+
+                    <a href="#" class="header-dropdown__link">Personal account</a>
+                    <a href="#" class="header-dropdown__link danger">Log out</a>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Order Imports -->
+
+    <section class="order-imports container">
+      <div class="right">
+
+        <div class="header-company">
+          <div class="header-company__name">Charlies wholesale</div>
+          <div class="header-company__name">Charlies wholesale</div>
+        </div>
+      </div>
+      <header class="order-imports__header">
+        <h1 class="order-imports__h1">Orders Import</h1>
+        <button class="btn">
+          back
+          <picture>
+            <source srcset="img/orders-import/back.svg" type="image/webp" />
+            <img src="img/orders-import/back.svg" type="image/webp" alt="" />
+          </picture>
+        </button>
+      </header>
+      <div class="order-imports__container">
+        <div class="order-imports__content">
+          <aside class="order-imports__sidebar">
+            <div class="order-imports__wrapper">
+              <h3 class="order-imports__title">Files Waiting Process:</h3>
+            </div>
+            <div class="order-imports__wrapper">
+              <h3 class="order-imports__title order-imports__title--alt">
+                Upload Files
+              </h3>
+              <label for="order-imports__input">
+                <h4 class="order-imports__h4">
+                  Select files from your computer:
+                </h4>
+                <input type="file" name="" id="order-imports__input" />
+                <div class="input-btn">Choose Files</div>
+              </label>
+              <h4 class="order-imports__h4">Or drag and drop your files:</h4>
+              <label for="order-imports__drag">
+                <input type="file" name="" id="order-imports__drag" />
+                <div class="input-drag">Just drag and drop files here</div>
+              </label>
+              <div class="process">
+                <div class="process__inner"></div>
+              </div>
+              <div class="order-imports__processed">
+                <h3 class="order-imports__title">Files Waiting Process:</h3>
+                <div class="order-imports__uploaded">
+                  image - 01.jpg <span>Success</span>
+                </div>
+                <div class="order-imports__uploaded">
+                  image - 02.jpg <span>Success</span>
+                </div>
+              </div>
+            </div>
+          </aside>
+          <main class="order-imports__main">
+            <div class="order-imports__wrapper">
+              <h3 class="order-imports__title">Imports Errors:</h3>
+              <div class="import-errors">
+                <header class="import-errors__header">
+                  <div class="import-errors__nameTitle">FILe NAME</div>
+                  <div class="import-errors__dateTitle">ORDER DATE</div>
+                  <div class="import-errors__numTitle">PO NUMBER</div>
+                  <div class="import-errors__messageTitle">ERROR MESSAGE</div>
+                </header>
+                <div class="import-errors__row">
+                  <div class="import-errors__name">
+                    <a href="#">SalesHistory120320bw3.csv</a>
+                  </div>
+                  <div class="import-errors__date">12.03.2020</div>
+                  <div class="import-errors__num">7083s</div>
+                  <div class="import-errors__message">
+                    WTG FOR C.S. Ship to Invalid State Code.
+                  </div>
+                </div>
+                <div class="import-errors__row">
+                  <div class="import-errors__name">
+                    <a href="#">SalesHistory120320bw3.csv</a>
+                  </div>
+                  <div class="import-errors__date">12.03.2020</div>
+                  <div class="import-errors__num">7083s</div>
+                  <div class="import-errors__message">
+                    WTG FOR C.S. Ship to Invalid State Code.
+                  </div>
+                </div>
+                <div class="import-errors__row">
+                  <div class="import-errors__name">
+                    <a href="#">SalesHistory120320bw3.csv</a>
+                  </div>
+                  <div class="import-errors__date">12.03.2020</div>
+                  <div class="import-errors__num">7083s</div>
+                  <div class="import-errors__message">
+                    WTG FOR C.S. Ship to Invalid State Code.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__inner">
+          <div class="footer__copyright">
+            Copyright ©2020 Bluewave Products
+          </div>
+          <div class="footer__address">
+            1745 Wallace Ave., St. Charles, IL 60174
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/script.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
