@@ -84,43 +84,138 @@
 
         <main class="main container">
             <div class="right">
-
                 <div class="header-company">
                     <div class="header-company__name">Charlies wholesale</div>
                     <div class="header-company__name">Charlies wholesale</div>
                 </div>
             </div>
-            <header class="step">
-                <div class="step__item">
-                    <div class="step__number active">1</div>
-                    <div class="step__title">Enter <br> order</div>
+            <header class="step-info">
+                <div class="page-heading">
+                    Order entry
                 </div>
-                <div class="step__item">
-                    <div class="step__number">2</div>
-                    <div class="step__title">Shipping <br>Information</div>
-                </div>
-                <div class="step__item">
-                    <div class="step__number">3</div>
-                    <div class="step__title">Payment <br>Information</div>
-                </div>
-                <div class="step__item">
-                    <div class="step__number">4</div>
-                    <div class="step__title">Confirm <br>order</div>
-                </div>
+                <div class="step">
+                    <div class="step__item">
+                        <div class="step__number active">1</div>
+                        <div class="step__title">Enter <br> order</div>
+                    </div>
+                    <div class="step__item">
+                        <div class="step__number">2</div>
+                        <div class="step__title">Payment <br>Information</div>
+                    </div>
+                    <div class="step__item">
+                        <div class="step__number">3</div>
+                        <div class="step__title">Confirm <br>order</div>
+                    </div>
+                </div> 
             </header>
+            <div class="step-two__container container">
+                <div class="step-two__content">
+                    <div class="po-number">
+                        <div class="po-number__title">
+                            PO Number:
+                        </div>
+                        <input type="text" placeholder="PO1234567" class="po-number__num"/>
+                    </div>
+                    <form action="" class="step-two-form">
+                        <div class="step-two-heading">
+                            <h1 class="step-two__h1">Ship to:</h1>
+                        </div>
+                        <div class="step-two-form__left">
+                            <div class="step-two-form__input">
+                                <label for="stepTwoName" class="step-two-form__label">First name<b class="red">*</b>:</label>
+                                <input class="text-input" type="text" id="stepTwoName" placeholder="Enter text">
+                            </div>
+                            <div class="step-two-form__input">
+                                <label for="stepTwoAddress1" class="step-two-form__label">Address 1<b class="red">*</b>:</label>
+                                <input class="text-input" type="text" id="stepTwoAddress1" placeholder="Enter text">
+                            </div>
+                            <div class="step-two-form__input">
+                                <label for="stepTwoState" class="step-two-form__label">Country<b class="red">*</b>:</label>
+                                <select class="custom-select" name="" id="stepTwoCountry">
+                                    <option value="USA">USA</option>
+                                    <option value="Mexico">Mexico</option>
+                                    <option value="United Kingdom">United Kingdom</option>
+                                </select>
+                            </div>
+                            <div class="step-two-form__input">
+                                <label for="stepTwoPostalCode" class="step-two-form__label">Postal Code<b class="red">*</b>:</label>
+                                <input class="text-input" type="text" id="stepTwoPostalCode" placeholder="Enter text">
+                            </div>
+                        </div>
+
+                        <div class="step-two-form__mid">
+                            <div class="step-two-form__input">
+                                <label for="stepTwoLastName" class="step-two-form__label">Last name<b class="red">*</b>:</label>
+                                <input class="text-input" type="text" id="stepTwoLastName" placeholder="Enter text">
+                            </div>
+                            <div class="step-two-form__input">
+                                <label for="stepTwoAddress2" class="step-two-form__label">Address 2:</label>
+                                <input class="text-input" type="text" id="stepTwoAddress2" placeholder="Enter text">
+                            </div>
+                            <div class="step-two-form__input">
+                                <label for="stepTwoState" class="step-two-form__label">State<b class="red">*</b>:</label>
+                                <select class="custom-select" name="" id="stepTwoState">
+                                    <option value="BG1009H">BG1009H</option>
+                                    <option value="BG1009H">BG1009H</option>
+                                    <option value="BG1009H">BG1009H</option>
+                                </select>
+                            </div>
+                            <div class="step-two-form__input">
+                                <label for="stepTwoPhone" class="step-two-form__label">Phone<b class="red">*</b>:</label>
+                                <input class="text-input" type="text" id="stepTwoPhone" placeholder="Enter text">
+                            </div>
+                        </div>
+
+                        <div class="step-two-form__right">
+                            <div class="step-two-form__input" style='visibility: hidden'>
+                                <label for="stepTwoLastName" class="step-two-form__label">SEPARATOR FORM</label>
+                                <input class="text-input" type="text" id="stepTwoLastName" placeholder="Enter text">
+                            </div>
+                            <div class="step-two-form__input">
+                                <label for="stepTwoAddress3" class="step-two-form__label">Address 3:</label>
+                                <input class="text-input" type="text" id="stepTwoAddress3" placeholder="Enter text">
+                            </div>
+                            <div class="step-two-form__input">
+                                <label for="stepTwoCity" class="step-two-form__label">City<b class="red">*</b>:</label>
+                                <input class="text-input" type="text" id="stepTwoCity" placeholder="Enter text">
+                            </div>
+                            <div class="step-two-form__input">
+                                <label for="stepTwoCity" class="step-two-form__label">Email:</label>
+                                <input class="text-input" type="text" id="stepTwoCity" placeholder="Enter text">
+                            </div>
+                            <!-- <div class="step-two-form__input">
+                                <label for="stepTwoShippingMethod" class="step-two-form__label">Shipping Method:</label>
+                                <select class="custom-select" name="" id="stepTwoShippingMethod">
+                                    <option value="BG1009H">Dropdown
+                                    </option>
+                                    <option value="BG1009H">BG1009H</option>
+                                    <option value="BG1009H">BG1009H</option>
+                                </select>
+                            </div> -->
+                        </div>
+                        <div class="step-two__button-container">
+                            <a href="#" class="btn-blue">Save</a>
+                        </div>
+                    </form>
+                    <div class="warning red">
+                        <span>* required fields</span>
+                    </div>
+                </div>
+            </div>
+            <div class="step-padding"></div>
             <div class="step-one__container container">
                 <div class="step-one__wrapper">
                     <div class="step-one__content">
-                        <div class="po-number">
+                        <!-- <div class="po-number">
                             <div class="po-number__title">
                                 PO Number:
                             </div>
                             <input type="text" placeholder="PO1234567" class="po-number__num"/>
-                        </div>
+                        </div> -->
                         <header class="step-one-header">
                             <div class="step-one-header__content">
                                 <div class="step-one-header__row">
-                                    <h4 class="step-one-header__title">Item</h4>
+                                    <h4 class="step-one-header__title">Item<b class="red">*</b></h4>
                                     <div class="step-one-header__select ">
                                         <input class="text-input" type="search" placeholder="Search..." id="stepOneSearch">
                                         <div class="search-options__block">
@@ -144,7 +239,7 @@
                                     </div>
                                 </div>
                                 <div class="step-one-header__row">
-                                    <h4 class="step-one-header__title">Qty</h4>
+                                    <h4 class="step-one-header__title">Qty<b class="red">*</b></h4>
                                     <input type="text" placeholder="1" class="step-one-header__btn"/>
                                 </div>
                                 <div class="step-one-header__row">
@@ -162,8 +257,10 @@
                                     </a>
                                 </div>
                             </div>
-
                         </header>
+                        <div class="warning red">
+                            <span>* required fields</span>
+                        </div>
                     </div>
                     <div class="step-one__content--sm">
                         <div class="step-one-table">
