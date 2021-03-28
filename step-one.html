@@ -146,8 +146,13 @@
                                 </select>
                             </div>
                             <div class="step-two-form__input">
-                                <label for="stepTwoZipCode" class="step-two-form__label">Zip Code<b class="red">*</b>:</label>
-                                <input class="text-input" type="text" id="stepTwoZipCode" placeholder="Zip Code">
+                                <label for="stepTwoCity" class="step-two-form__label">City<b class="red">*</b>:</label>
+                                <select class="custom-select" name="citySelect" id="stepTwoCity">
+                                    <option value="">Choose city</option>
+                                    <option value="New York">New York</option>
+                                    <option value="Alexandria">Alexandria</option>
+                                    <option value="California">California</option>
+                                </select>
                             </div>
                         </div>
 
@@ -161,14 +166,10 @@
                                 <input class="text-input" type="text" id="stepTwoAddress2" placeholder="Address">
                             </div>
                             <div class="step-two-form__input">
-                                <label for="stepTwoState" class="step-two-form__label">State<b class="red">*</b>:</label>
-                                <select class="custom-select" name="" id="stepTwoState">
-                                    <option value="">Choose State</option>
-                                    <option value="Alabama">Alabama</option>
-                                    <option value="Texas">Texas</option>
-                                    <option value="Georgia">Georgia</option>
-                                </select>
+                                <label for="stepTwoZipCode" class="step-two-form__label">Zip Code<b class="red">*</b>:</label>
+                                <input class="text-input" type="text" id="stepTwoZipCode" placeholder="Zip Code">
                             </div>
+                            
                             <div class="step-two-form__input">
                                 <label for="stepTwoPhone" class="step-two-form__label">Phone<b class="red">*</b>:</label>
                                 <input class="text-input" type="text" id="stepTwoPhone" placeholder="(012)3456789">
@@ -184,18 +185,19 @@
                                 <label for="stepTwoAddress3" class="step-two-form__label">Address 3:</label>
                                 <input class="text-input" type="text" id="stepTwoAddress3" placeholder="Address">
                             </div>
+                            
                             <div class="step-two-form__input">
-                                <label for="stepTwoCity" class="step-two-form__label">City<b class="red">*</b>:</label>
-                                <select class="custom-select" name="citySelect" id="stepTwoCity">
-                                    <option value="">Choose city</option>
-                                    <option value="New York">New York</option>
-                                    <option value="Alexandria">Alexandria</option>
-                                    <option value="California">California</option>
+                                <label for="stepTwoState" class="step-two-form__label">State<b class="red">*</b>:</label>
+                                <select class="custom-select" name="" id="stepTwoState">
+                                    <option value="">Choose State</option>
+                                    <option value="Alabama">Alabama</option>
+                                    <option value="Texas">Texas</option>
+                                    <option value="Georgia">Georgia</option>
                                 </select>
                             </div>
                             <div class="step-two-form__input">
                                 <label for="stepTwoCity" class="step-two-form__label">Email:</label>
-                                <input class="text-input" type="text" id="stepTwoCity" placeholder="Enter text">
+                                <input class="text-input" type="text" id="stepTwoCity" placeholder="name@domain.com">
                             </div>
                             <!-- <div class="step-two-form__input">
                                 <label for="stepTwoShippingMethod" class="step-two-form__label">Shipping Method:</label>
@@ -397,33 +399,37 @@
                     <img class="desc-modal__close" id='infoModalClose' src="img/account/exit-icon.svg" alt="">
                 </header>
                 <div class="modal__container__item container__leftside">
-                    <input type="text" name='SearchItemInModal' class="input-text" placeholder="Item#">
+                    <input type="text" name='SearchItemInModal' class="input-text modal-input" placeholder="Item#">
+                    <input type="text" name='SearchItemInModalDescription' class="input-text modal-input" placeholder="Description">
                     <ul class="info-modal__ul">
-                        <li class='desc-modal__result'>BH000009</li>
-                        <li class='desc-modal__result'>BH000009</li>
-                        <li class='desc-modal__result'>BH000009</li>
-                        <li class='desc-modal__result'>BH000009</li>
-                        <li class='desc-modal__result'>BH000009</li>
-                        <li class='desc-modal__result'>BH000009</li>
-                        <li class='desc-modal__result'>BH000009</li>
-                        <li class='desc-modal__result'>BH000009</li>
-                        <li class='desc-modal__result'>BH000009</li>
+                        <!-- <li class='desc-modal__result'>
+                            <div class="item-num-modal" style='color: #aaa'>Items not found</div>
+                        </li> -->
+                        <li class='desc-modal__result'>
+                            <div class="item-num-modal">BH000009</div>
+                            <div class="item-desc-modal">Swimming pool</div>
+                        </li>
+                        <li class='desc-modal__result'>
+                            <div class="item-num-modal">BH000009</div>
+                            <div class="item-desc-modal">Swimming pool</div>
+                        </li>
+                        <li class='desc-modal__result'>
+                            <div class="item-num-modal">BH000009</div>
+                            <div class="item-desc-modal">Swimming pool</div>
+                        </li>
+                        <li class='desc-modal__result'>
+                            <div class="item-num-modal">BH000009</div>
+                            <div class="item-desc-modal">Swimming pool</div>
+                        </li>
+                        <li class='desc-modal__result'>
+                            <div class="item-num-modal">BH000009</div>
+                            <div class="item-desc-modal">Swimming pool</div>
+                        </li>
+                        <li class='desc-modal__result'>
+                            <div class="item-num-modal">BH000009</div>
+                            <div class="item-desc-modal">Swimming pool</div>
+                        </li>
                     </ul>
-                </div>
-                <div class="modal__container__item container__rightside">
-                    <input type="text" name='SearchItemInModalDescription' class="input-text" placeholder="Description">
-                    <ul class="info-modal__ul">
-                        <li class='desc-modal__result'>Item1</li>
-                        <li class='desc-modal__result'>Item2</li>
-                        <li class='desc-modal__result'>Item3</li>
-                        <li class='desc-modal__result'>Item4</li>
-                        <li class='desc-modal__result'>Item6</li>
-                        <li class='desc-modal__result'>Item6</li>
-                        <li class='desc-modal__result'>Item7</li>
-                        <li class='desc-modal__result'>Item8</li>
-                        <li class='desc-modal__result'>Item9</li>
-                    </ul>
-
                 </div>
             </div>
         </div>

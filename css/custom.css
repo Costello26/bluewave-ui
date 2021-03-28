@@ -1704,7 +1704,7 @@ form.step-two-form input, select {
 }
 
 .info-modal__container{
-  max-width: 475px;
+  max-width: 675px;
   /* width: 30%; */
   padding: 1.5rem;
   background-color: #fff;
@@ -1716,12 +1716,19 @@ form.step-two-form input, select {
 }
 
 .modal__container__item {
-  flex-basis: 48%;
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.modal-input{
+  flex-basis: 49%;
 }
 
 @media (max-width: 500px){
-  .modal__container__item {
-    flex-basis: 100%;
+  .modal-input{
+    margin: 10px 0;
   }
   .info-modal__container header{
     display: none !important;
@@ -1743,9 +1750,29 @@ form.step-two-form input, select {
 
 .info-modal__ul{
   margin-top: 10px;
-  max-height: 200px;
+  height: 300px;
   overflow-x: hidden;
   overflow-y: scroll;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+}
+
+.order-number {
+  margin-left: 30px;
+}
+
+@media (max-width: 720px){
+  .order-number {
+    margin-left: 0px;
+  }
+}
+
+.info-modal__ul li{
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
 }
 
 .info-modal__container header{
