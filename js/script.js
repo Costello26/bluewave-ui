@@ -72,8 +72,51 @@ $(document).ready(function () {
     $(".payment-modal__window ").click(function (e) {
       e.stopPropagation();
     });
- 
 
+    $('img[data-func="plus"]').click(function(){
+      let input = $(this).parent().siblings('input.qty-input');
+      let val = Number(input.val())
+      input.val(val+1)
+    })
+
+    $('img[data-func="minus"]').click(function(){
+      let input = $(this).parent().siblings('input.qty-input');
+      let val = Number(input.val())
+      if(val > 1){
+        input.val(val-1)
+      }
+    })
+
+    $('img[data-func="edit"]').click(function(){
+      let controls = $(this).parents('.step-one-table__col').find('.controls');
+      let qtyForm = $(this).parents('.step-one-table__col').find('.qty-input');
+      controls.toggleClass('controls-hidden');
+      if (controls.hasClass('controls-hidden')){
+        qtyForm.css('border','none');
+        qtyForm.attr('readonly', 'readonly');
+      } else {
+        qtyForm.css('border','1px solid #666');
+        qtyForm.removeAttr('readonly')
+      }
+    })
+
+    $('img[data-func="delete"]').click(function(){
+      let listItem = $(this).parents('.step-one-table__col');
+      listItem.slideUp(250);
+      setTimeout(()=>listItem.remove(), 1000);
+      //on remove list item (step one)
+      //do something
+    })
+ 
+    $('#infoModalClose').click(function(){
+      $('.item-info__modal').animate({'opacity':'0'}, 150)
+      $('.item-info__modal').css({'display':'none'});
+    })
+
+    $('span.info-modal').click(function(){
+      $('.item-info__modal').css('display', 'flex');
+      $('.item-info__modal').animate({'opacity':'1'}, 150)
+    })
 
 
  const stepOneDesc = $("#stepOneDesc");

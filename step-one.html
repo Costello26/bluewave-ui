@@ -110,11 +110,18 @@
             </header>
             <div class="step-two__container container">
                 <div class="step-two__content">
-                    <div class="po-number">
-                        <div class="po-number__title">
-                            PO Number:
+                    <div class="topfields">
+                        <div class="po-number">
+                            <div class="po-number__title">
+                                PO Number<b class="red">*</b>:
+                            </div>
+                            <input type="text" placeholder="PO1234567" class="po-number__num"/>
                         </div>
-                        <input type="text" placeholder="PO1234567" class="po-number__num"/>
+                        <div class="order-number">
+                            <div class="po-number__title">
+                                Order Number<b class="red"></b>: <span>7233</span>   
+                            </div>
+                        </div>
                     </div>
                     <form action="" class="step-two-form">
                         <div class="step-two-heading">
@@ -123,46 +130,48 @@
                         <div class="step-two-form__left">
                             <div class="step-two-form__input">
                                 <label for="stepTwoName" class="step-two-form__label">First name<b class="red">*</b>:</label>
-                                <input class="text-input" type="text" id="stepTwoName" placeholder="Enter text">
+                                <input class="text-input" type="text" id="stepTwoName" placeholder="Name">
                             </div>
                             <div class="step-two-form__input">
                                 <label for="stepTwoAddress1" class="step-two-form__label">Address 1<b class="red">*</b>:</label>
-                                <input class="text-input" type="text" id="stepTwoAddress1" placeholder="Enter text">
+                                <input class="text-input" type="text" id="stepTwoAddress1" placeholder="Street Address or P.O. Box, apt., suite or floor ">
                             </div>
                             <div class="step-two-form__input">
                                 <label for="stepTwoState" class="step-two-form__label">Country<b class="red">*</b>:</label>
                                 <select class="custom-select" name="" id="stepTwoCountry">
+                                    <option value="">Choose country</option>
                                     <option value="USA">USA</option>
                                     <option value="Mexico">Mexico</option>
                                     <option value="United Kingdom">United Kingdom</option>
                                 </select>
                             </div>
                             <div class="step-two-form__input">
-                                <label for="stepTwoPostalCode" class="step-two-form__label">Postal Code<b class="red">*</b>:</label>
-                                <input class="text-input" type="text" id="stepTwoPostalCode" placeholder="Enter text">
+                                <label for="stepTwoZipCode" class="step-two-form__label">Zip Code<b class="red">*</b>:</label>
+                                <input class="text-input" type="text" id="stepTwoZipCode" placeholder="Zip Code">
                             </div>
                         </div>
 
                         <div class="step-two-form__mid">
                             <div class="step-two-form__input">
                                 <label for="stepTwoLastName" class="step-two-form__label">Last name<b class="red">*</b>:</label>
-                                <input class="text-input" type="text" id="stepTwoLastName" placeholder="Enter text">
+                                <input class="text-input" type="text" id="stepTwoLastName" placeholder="Last name">
                             </div>
                             <div class="step-two-form__input">
                                 <label for="stepTwoAddress2" class="step-two-form__label">Address 2:</label>
-                                <input class="text-input" type="text" id="stepTwoAddress2" placeholder="Enter text">
+                                <input class="text-input" type="text" id="stepTwoAddress2" placeholder="Address">
                             </div>
                             <div class="step-two-form__input">
                                 <label for="stepTwoState" class="step-two-form__label">State<b class="red">*</b>:</label>
                                 <select class="custom-select" name="" id="stepTwoState">
-                                    <option value="BG1009H">BG1009H</option>
-                                    <option value="BG1009H">BG1009H</option>
-                                    <option value="BG1009H">BG1009H</option>
+                                    <option value="">Choose State</option>
+                                    <option value="Alabama">Alabama</option>
+                                    <option value="Texas">Texas</option>
+                                    <option value="Georgia">Georgia</option>
                                 </select>
                             </div>
                             <div class="step-two-form__input">
                                 <label for="stepTwoPhone" class="step-two-form__label">Phone<b class="red">*</b>:</label>
-                                <input class="text-input" type="text" id="stepTwoPhone" placeholder="Enter text">
+                                <input class="text-input" type="text" id="stepTwoPhone" placeholder="(012)3456789">
                             </div>
                         </div>
 
@@ -173,11 +182,16 @@
                             </div> -->
                             <div class="step-two-form__input">
                                 <label for="stepTwoAddress3" class="step-two-form__label">Address 3:</label>
-                                <input class="text-input" type="text" id="stepTwoAddress3" placeholder="Enter text">
+                                <input class="text-input" type="text" id="stepTwoAddress3" placeholder="Address">
                             </div>
                             <div class="step-two-form__input">
                                 <label for="stepTwoCity" class="step-two-form__label">City<b class="red">*</b>:</label>
-                                <input class="text-input" type="text" id="stepTwoCity" placeholder="Enter text">
+                                <select class="custom-select" name="citySelect" id="stepTwoCity">
+                                    <option value="">Choose city</option>
+                                    <option value="New York">New York</option>
+                                    <option value="Alexandria">Alexandria</option>
+                                    <option value="California">California</option>
+                                </select>
                             </div>
                             <div class="step-two-form__input">
                                 <label for="stepTwoCity" class="step-two-form__label">Email:</label>
@@ -215,9 +229,13 @@
                         <header class="step-one-header">
                             <div class="step-one-header__content">
                                 <div class="step-one-header__row">
-                                    <h4 class="step-one-header__title">Item<b class="red">*</b></h4>
-                                    <div class="step-one-header__select ">
+                                    <h4 class="step-one-header__title">
+                                        Item
+                                        <b class='red'>*</b>
+                                    </h4>
+                                    <div class="step-one-header__select position-custom">
                                         <input class="text-input" type="search" placeholder="Search..." id="stepOneSearch">
+                                        <span class="info-modal">&#9432;</span>
                                         <div class="search-options__block">
                                             <span class="search-option__item">BH1009H</span>
                                             <span class="search-option__item">BH1008H</span>
@@ -271,34 +289,83 @@
                                     <div class="step-one-table__row">QTY</div>
                                     <div class="step-one-table__row">Unit Price</div>
                                     <div class="step-one-table__row">Ext. Price</div>
+                                    <div class="step-one-table__row">Manage</div>
                                 </header>
                                 <div class="step-one-table__col">
                                     <div class="step-one-table__value">Enter text</div>
                                     <div class="step-one-table__value">Enter text</div>
-                                    <div class="step-one-table__value">1</div>
+                                    <div class="step-one-table__value">
+                                        <div class="table__value-qty">
+                                            <input type="text" class='qty-input' value='1' readonly>
+                                            <div class="controls controls-hidden">
+                                                <img src="img/svg/plus.svg" data-func='plus' alt="Plus">
+                                                <img src="img/svg/minus.svg" data-func='minus' alt="Minus">
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="step-one-table__value">350.00</div>
                                     <div class="step-one-table__value">350.00</div>
+                                    <div class="step-one-table__value">
+                                        <img class='step-one__manage' data-func='edit' title='Edit' src="img/svg/edit.svg" alt="edit">
+                                        <img class='step-one__manage' data-func='delete' title='Delete' src="img/svg/delete.svg" alt="delete">
+                                    </div>
                                 </div>
                                 <div class="step-one-table__col">
                                     <div class="step-one-table__value">Enter text</div>
                                     <div class="step-one-table__value">Enter text</div>
-                                    <div class="step-one-table__value">1</div>
+                                    <div class="step-one-table__value">
+                                        <div class="table__value-qty">
+                                            <input type="text" class='qty-input' value='1' readonly>
+                                            <div class="controls controls-hidden">
+                                                <img src="img/svg/plus.svg" data-func='plus' alt="Plus">
+                                                <img src="img/svg/minus.svg" data-func='minus' alt="Minus">
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="step-one-table__value">350.00</div>
                                     <div class="step-one-table__value">350.00</div>
+                                    <div class="step-one-table__value">
+                                        <img class='step-one__manage' data-func='edit' title='Edit' src="img/svg/edit.svg" alt="edit">
+                                        <img class='step-one__manage' data-func='delete' title='Delete' src="img/svg/delete.svg" alt="delete">
+                                    </div>
                                 </div>
                                 <div class="step-one-table__col">
                                     <div class="step-one-table__value">Enter text</div>
                                     <div class="step-one-table__value">Enter text</div>
-                                    <div class="step-one-table__value">1</div>
+                                    <div class="step-one-table__value">
+                                        <div class="table__value-qty">
+                                            <input type="text" class='qty-input' value='1' readonly>
+                                            <div class="controls controls-hidden">
+                                                <img src="img/svg/plus.svg" data-func='plus' alt="Plus">
+                                                <img src="img/svg/minus.svg" data-func='minus' alt="Minus">
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="step-one-table__value">350.00</div>
                                     <div class="step-one-table__value">350.00</div>
+                                    <div class="step-one-table__value">
+                                        <img class='step-one__manage' data-func='edit' title='Edit' src="img/svg/edit.svg" alt="edit">
+                                        <img class='step-one__manage' data-func='delete' title='Delete' src="img/svg/delete.svg" alt="delete">
+                                    </div>
                                 </div>
                                 <div class="step-one-table__col">
                                     <div class="step-one-table__value">Enter text</div>
                                     <div class="step-one-table__value">Enter text</div>
-                                    <div class="step-one-table__value">1</div>
+                                    <div class="step-one-table__value">
+                                        <div class="table__value-qty">
+                                            <input type="text" class='qty-input' value='1' readonly>
+                                            <div class="controls controls-hidden">
+                                                <img src="img/svg/plus.svg" data-func='plus' alt="Plus">
+                                                <img src="img/svg/minus.svg" data-func='minus' alt="Minus">
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="step-one-table__value">350.00</div>
                                     <div class="step-one-table__value">350.00</div>
+                                    <div class="step-one-table__value">
+                                        <img class='step-one__manage' data-func='edit' title='Edit' src="img/svg/edit.svg" alt="edit">
+                                        <img class='step-one__manage' data-func='delete' title='Delete' src="img/svg/delete.svg" alt="delete">
+                                    </div>
                                 </div>
                             </div>
 
@@ -312,7 +379,7 @@
                             </a>
                         </div>
                         <div class="step-two__button-container">
-                            <a href="#" class="btn-blue">Next-payment</a>
+                            <a href="#" class="btn-blue">Review Order</a>
                         </div>
                     </div>
                 </div>
@@ -322,7 +389,44 @@
 
 
         </main>
+        <div class="item-info__modal">
+            <div class="info-modal__container">
+                <header class="desc-modal__header">
+                    <h3 class="desc-modal__heading">Item#</h3>
+                    <h3 class="desc-modal__heading">Description</h3>
+                    <img class="desc-modal__close" id='infoModalClose' src="img/account/exit-icon.svg" alt="">
+                </header>
+                <div class="modal__container__item container__leftside">
+                    <input type="text" name='SearchItemInModal' class="input-text" placeholder="Item#">
+                    <ul class="info-modal__ul">
+                        <li class='desc-modal__result'>BH000009</li>
+                        <li class='desc-modal__result'>BH000009</li>
+                        <li class='desc-modal__result'>BH000009</li>
+                        <li class='desc-modal__result'>BH000009</li>
+                        <li class='desc-modal__result'>BH000009</li>
+                        <li class='desc-modal__result'>BH000009</li>
+                        <li class='desc-modal__result'>BH000009</li>
+                        <li class='desc-modal__result'>BH000009</li>
+                        <li class='desc-modal__result'>BH000009</li>
+                    </ul>
+                </div>
+                <div class="modal__container__item container__rightside">
+                    <input type="text" name='SearchItemInModalDescription' class="input-text" placeholder="Description">
+                    <ul class="info-modal__ul">
+                        <li class='desc-modal__result'>Item1</li>
+                        <li class='desc-modal__result'>Item2</li>
+                        <li class='desc-modal__result'>Item3</li>
+                        <li class='desc-modal__result'>Item4</li>
+                        <li class='desc-modal__result'>Item6</li>
+                        <li class='desc-modal__result'>Item6</li>
+                        <li class='desc-modal__result'>Item7</li>
+                        <li class='desc-modal__result'>Item8</li>
+                        <li class='desc-modal__result'>Item9</li>
+                    </ul>
 
+                </div>
+            </div>
+        </div>
         <div class="desc-modal">
             <div class="desc-modal__container">
                 <div class="desc-modal__window">
