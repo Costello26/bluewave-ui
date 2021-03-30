@@ -92,7 +92,10 @@
             </div>
             <header class="step-info">
                 <div class="page-heading">
-                    Payment Information
+                    Order confirmation
+                </div>
+                <div class="page-heading-secondary">
+                    Thank you for your order!
                 </div>
                 <div class="step">
                     <div class="step__item">
@@ -104,76 +107,122 @@
                         <div class="step__title">Payment <br>Information</div>
                     </div>
                     <div class="step__item">
-                        <div class="step__number step__number">3</div>
+                        <div class="step__number step__number--four active">3</div>
                         <div class="step__title">Confirm <br>order</div>
                     </div>
                 </div> 
             </header>
-            <div class="step-three__container container">
-                <div class="step-three__content">
-                    <h1 class="step-three__h1">Payment:</h1>
-                    <form action="" class="step-three-form">
-                        <div class="step-three__item">
-                            <label class="step-three__label">Method:</label>
-                            <div class="step-three__group">
-                                <div class="step-three__row">
-                                    <label for="stepThreeCreditCard">Credit card</label>
-                                    <input type="radio" name="" id="stepThreeCreditCard">
-                                </div>
-                                <div class="step-three__row">
-                                    <label for="stepThreeTerms">Terms {Terms Name}</label>
-                                    <input type="radio" name="" id="stepThreeTerms">
-                                </div>
+            <div class="step-four__container container">
+                <div class="step-four-top">
+                    <div class="po-number">
+                        <div class="po-container">
+                            <div class="po-number__title">
+                                PO Number:
                             </div>
-
+                            <input type="text" placeholder="PO1234567" class="po-number__num"/>
                         </div>
-                        <div class="step-three__item">
-                            <div class="step-three__input">
-                                <label for="stepThreeCardType" class="step-three__label">Card Type:</label>
-                                <select class="custom-select" name="" id="stepThreeCardType">
-                                    <option value="BG1009H">Enter text</option>
-                                    <option value="BG1009H">BG1009H</option>
-                                    <option value="BG1009H">BG1009H</option>
-                                </select>
+                        
+                        <div class="po-number__title">
+                            Order Number<b class="red"></b>: <span>7233</span>   
+                        </div>
+                    </div>
+                    <div class="step-four-top__content">
+                        <div class="step-four-top__row">
+                            <h4 class="step-four-top__h4">Ship to:</h4>
+                            <div class="step-four-top__textarea">
+                                <textarea class="area-borderless" placeholder="Enter text" name="" id="">
+                            </textarea>
                             </div>
                         </div>
-                        <div class="step-three__item">
-                            <div class="step-three__input">
-                                <label for="stepThreeNameOfCard" class="step-three__label">Name of Card:</label>
-                                <input class="text-input" type="text" id="stepThreeNameOfCard" placeholder="Enter text">
+                        <div class="step-four-top__row">
+                            <div class="step-four__input">
+                                <label for="stepFourShipMethod" class="step-four__label">Ship Method:</label>
+                                <input class="text-input" type="text" id="stepFourShipMethod">
+                            </div>
+                            <div class="step-four__input">
+                                <label for="stepFourPaymentMethod" class="step-four__label">Payment Method:</label>
+                                <input class="text-input" type="text" id="stepFourPaymentMethod">
                             </div>
                         </div>
-                        <div class="step-three__item">
-                            <div class="step-three__input">
-                                <label for="stepThreeCardNumber" class="step-three__label">Card Number:</label>
-                                <input class="text-input" type="text" id="stepThreeCardNumber" placeholder="Enter text">
-                            </div>
+                        <div class="step-four-top__row">
+                            <textarea name="" id="" class="textarea" placeholder="Credit Card Details"></textarea>
                         </div>
-                        <div class="step-three__item">
-                            <div class="step-three__input">
-                                <label for="stepThreeExpiration" class="step-three__label">Expiration:</label>
-                                <div class="step-three__exp">
-                                    <input class="text-input text-input--xs" type="text" id="stepThreeExpiration"
-                                        placeholder="00">
-                                    <span></span>
-                                    <input class="text-input text-input--xs" type="text" id="stepThreeExpiration"
-                                        placeholder="00">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="step-three__item">
-                            <div class="step-three__input step-three__input">
-                                <label for="stepThreePostalCode" class="step-three__label">Postal Code:</label>
-                                <input class="text-input" type="text" id="stepThreePostalCode" placeholder="Enter text">
-                            </div>
-                        </div>
-                        <div class="right">
-
-                            <a href="#" class="btn-blue">Next-Payment</a>
-                        </div>
-                    </form>
+                    </div>
                 </div>
+                <div class="step-four-middle">
+                    <div class="step-one-table">
+                        <header class="step-one-table__header">
+                            <div class="step-one-table__row">Item #</div>
+                            <div class="step-one-table__row">Description</div>
+                            <div class="step-one-table__row">QTY</div>
+                            <div class="step-one-table__row">Unit Price</div>
+                            <div class="step-one-table__row">Ext. Price</div>
+                        </header>
+                        <div class="step-one-table__col">
+                            <div class="step-one-table__value">Enter text</div>
+                            <div class="step-one-table__value">Enter text</div>
+                            <div class="step-one-table__value">1</div>
+                            <div class="step-one-table__value">350.00</div>
+                            <div class="step-one-table__value">350.00</div>
+                        </div>
+                        <div class="step-one-table__col">
+                            <div class="step-one-table__value">Enter text</div>
+                            <div class="step-one-table__value">Enter text</div>
+                            <div class="step-one-table__value">1</div>
+                            <div class="step-one-table__value">350.00</div>
+                            <div class="step-one-table__value">350.00</div>
+                        </div>
+                        <div class="step-one-table__col">
+                            <div class="step-one-table__value">Enter text</div>
+                            <div class="step-one-table__value">Enter text</div>
+                            <div class="step-one-table__value">1</div>
+                            <div class="step-one-table__value">350.00</div>
+                            <div class="step-one-table__value">350.00</div>
+                        </div>
+                        <div class="step-one-table__col">
+                            <div class="step-one-table__value">Enter text</div>
+                            <div class="step-one-table__value">Enter text</div>
+                            <div class="step-one-table__value">1</div>
+                            <div class="step-one-table__value">350.00</div>
+                            <div class="step-one-table__value">350.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-four-bottom">
+                    <div class="step-four-bottom__col">
+                        <a href="#" class="btn-alt">
+                            <div class="btn-alt__group">
+                                <div class="btn-alt__title">Subtotal:</div>
+                                <div class="btn-alt__price">350.00</div>
+                            </div>
+                        </a>
+                        <a href="#" class="btn-alt">
+                            <div class="btn-alt__group">
+                                <div class="btn-alt__title">Shipping:</div>
+                                <div class="btn-alt__price">350.00</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="step-four-bottom__col">
+                        <a href="#" class="btn-alt">
+                            <div class="btn-alt__group">
+                                <div class="btn-alt__title">Tax:</div>
+                                <div class="btn-alt__price">350.00</div>
+                            </div>
+                        </a>
+                        <a href="#" class="btn-alt">
+                            <div class="btn-alt__group">
+                                <div class="btn-alt__title">Total:</div>
+                                <div class="btn-alt__price">350.00</div>
+                            </div>
+                        </a>
 
+                    </div>
+
+                </div>
+                <div class="step-four-bottom__btn fl-center">
+                    <a href="#" class="btn-blue">Confirm Order</a>
+                </div>
             </div>
 
 
@@ -181,13 +230,15 @@
 
 
 
+
+
+
+
+
+
+
+
         </main>
-
-
-
-
-
-
 
         <footer class="footer">
             <div class="footer__container">

@@ -917,6 +917,19 @@ a {
   font-size: 1.6em;
   font-weight: 600;
 }
+
+.page-heading-secondary {
+  flex-basis: 100%;
+  text-align: center;
+  font-size: 2.2rem;
+  color: #42A4F0;
+  text-transform: uppercase;
+}
+
+.fl-center{
+  justify-content: center !important; 
+}
+
 .step {
   max-width: 270px;
   flex-basis: 33%;
@@ -1242,6 +1255,7 @@ span.search-option__item:hover {
   border: 1px solid transparent;
   border-radius: 2px;
   transition: .3s;
+  background-color: transparent;
 }
 
 .table__value-qty .controls{
@@ -1262,6 +1276,18 @@ span.search-option__item:hover {
   width: 10px;
   height: 12px;
   margin: 2px 0;
+}
+
+.step-one__manage-link{
+  margin-right: 20px;
+  transition: .3s;
+  color: #42A4F0;
+  visibility: hidden;
+  /* #3183EE */
+}
+
+.step-one__manage-link:hover{
+    color: #3183EE;
 }
 
 .step-one-table__value .step-one__manage{
@@ -1333,6 +1359,29 @@ span.search-option__item:hover {
   padding-bottom: 25px;
 }
 
+.po-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 30px;
+}
+
+.step-four-top .po-number{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 700px) {
+  .po-number{
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 500px) {
+  .po-number__title{
+    font-size: 1.8rem;
+  }
+}
+
 .step-two__h1 {
   font-weight: 550;
   font-size: 22px;
@@ -1393,7 +1442,7 @@ form.step-two-form input, select {
   display: flex;
 }
 
-@media(max-width:400px) {
+@media(max-width:500px) {
 
   .step-two-form__left,
   .step-two-form__right,
@@ -1675,9 +1724,9 @@ form.step-two-form input, select {
   cursor: pointer;
   color: #3183EE;
   position: relative;
-  font-size: 18px;
+  font-size: 22px;
   top: 0;
-  right: 25px;
+  right: 30px;
 }
 
 @media (max-width: 1060px){
@@ -1738,7 +1787,7 @@ form.step-two-form input, select {
     flex-wrap: wrap;
   }
   .po-number__title{
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
 }
 

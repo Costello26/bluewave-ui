@@ -1,5 +1,6 @@
 $(document).ready(function () {
-  $(".header__burger").click(function () {
+
+  function headerFoo(){
     $(".header__nav").toggleClass("active-m");
     if ($(".header__nav").hasClass("active-m")) {
       $(".header__nav").css({ display: "flex" });
@@ -8,6 +9,10 @@ $(document).ready(function () {
       $(".header__nav").animate({ opacity: "0", display: "none" }, 150);
       $(".header__nav").css({ display: "none" });
     }
+  }
+
+  $(".header__burger").click(function () {
+    headerFoo()
   });
   $("span.orders__body-item").click(function () {
     $(".ordersModal").css({ visibility: "visible" });
@@ -91,6 +96,7 @@ $(document).ready(function () {
       let controls = $(this).parents('.step-one-table__col').find('.controls');
       let qtyForm = $(this).parents('.step-one-table__col').find('.qty-input');
       controls.toggleClass('controls-hidden');
+      $('.step-one__manage-link').css('visibility', 'visible');
       if (controls.hasClass('controls-hidden')){
         qtyForm.css('border','none');
         qtyForm.attr('readonly', 'readonly');
@@ -98,6 +104,15 @@ $(document).ready(function () {
         qtyForm.css('border','1px solid #666');
         qtyForm.removeAttr('readonly')
       }
+    })
+
+    $('.step-one__manage-link').click(function(e){
+      e.preventDefault();
+      let controls = $(this).parents('.step-one-table__col').find('.controls');
+      let qtyForm = $(this).parents('.step-one-table__col').find('.qty-input');
+      controls.addClass('controls-hidden');
+      qtyForm.css('border','none');
+      qtyForm.attr('readonly', 'readonly');
     })
 
     $('img[data-func="delete"]').click(function(){
