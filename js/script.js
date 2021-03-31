@@ -96,7 +96,7 @@ $(document).ready(function () {
       let controls = $(this).parents('.step-one-table__col').find('.controls');
       let qtyForm = $(this).parents('.step-one-table__col').find('.qty-input');
       controls.toggleClass('controls-hidden');
-      $('.step-one__manage-link').css('visibility', 'visible');
+      $(this).siblings('.step-one__manage-link').css('visibility', 'visible');
       if (controls.hasClass('controls-hidden')){
         qtyForm.css('border','none');
         qtyForm.attr('readonly', 'readonly');
@@ -110,6 +110,7 @@ $(document).ready(function () {
       e.preventDefault();
       let controls = $(this).parents('.step-one-table__col').find('.controls');
       let qtyForm = $(this).parents('.step-one-table__col').find('.qty-input');
+      $(this).css('visibility','hidden');
       controls.addClass('controls-hidden');
       qtyForm.css('border','none');
       qtyForm.attr('readonly', 'readonly');
