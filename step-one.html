@@ -108,7 +108,30 @@
                     </div>
                 </div> 
             </header>
-            <div class="step-two__container container">
+            <div class="warning__notification">
+                <div class="warning__inner unavailable">
+                    <h2>Warning!</h2>
+                    <p class='to-fix'>
+                        Some items are unavailable or enough in stock <br>
+                        See below to fix it!
+                    </p>
+                    <p class='not-enough'>
+                        Maximum <span class='instock'>10</span> items are available current time.
+                    </p>
+                    <p class='warning-outofstock'>
+                        Out of stock
+                    </p>
+                </div>
+                <div class="warning__inner required fields">
+                    <h2>
+                        Please fill out all required fields
+                        <br>
+                        See below
+                    </h2>
+                </div>
+
+            </div>
+            <div class="step-two__container container customer-info">
                 <div class="step-two__content">
                     <div class="topfields">
                         <div class="po-number">
@@ -130,15 +153,15 @@
                         <div class="step-two-form__left">
                             <div class="step-two-form__input">
                                 <label for="stepTwoName" class="step-two-form__label">First name<b class="red">*</b>:</label>
-                                <input class="text-input" type="text" id="stepTwoName" placeholder="Name">
+                                <input class="text-input required input" type="text" id="stepTwoName" placeholder="Name">
                             </div>
                             <div class="step-two-form__input">
                                 <label for="stepTwoAddress1" class="step-two-form__label">Address 1<b class="red">*</b>:</label>
-                                <input class="text-input" type="text" id="stepTwoAddress1" placeholder="Street Address or P.O. Box, apt., suite or floor ">
+                                <input class="text-input required input" type="text" id="stepTwoAddress1" placeholder="Street Address or P.O. Box, apt., suite or floor ">
                             </div>
                             <div class="step-two-form__input">
                                 <label for="stepTwoState" class="step-two-form__label">Country<b class="red">*</b>:</label>
-                                <select class="custom-select" name="" id="stepTwoCountry">
+                                <select class="custom-select required input" name="" id="stepTwoCountry">
                                     <option value="">Choose country</option>
                                     <option value="USA">USA</option>
                                     <option value="Mexico">Mexico</option>
@@ -147,7 +170,7 @@
                             </div>
                             <div class="step-two-form__input">
                                 <label for="stepTwoCity" class="step-two-form__label">City<b class="red">*</b>:</label>
-                                <select class="custom-select" name="citySelect" id="stepTwoCity">
+                                <select class="custom-select required input" name="citySelect" id="stepTwoCity">
                                     <option value="">Choose city</option>
                                     <option value="New York">New York</option>
                                     <option value="Alexandria">Alexandria</option>
@@ -159,20 +182,20 @@
                         <div class="step-two-form__mid">
                             <div class="step-two-form__input">
                                 <label for="stepTwoLastName" class="step-two-form__label">Last name<b class="red">*</b>:</label>
-                                <input class="text-input" type="text" id="stepTwoLastName" placeholder="Last name">
+                                <input class="text-input required input" type="text" id="stepTwoLastName" placeholder="Last name">
                             </div>
                             <div class="step-two-form__input">
                                 <label for="stepTwoAddress2" class="step-two-form__label">Address 2:</label>
                                 <input class="text-input" type="text" id="stepTwoAddress2" placeholder="Address">
                             </div>
                             <div class="step-two-form__input">
-                                <label for="stepTwoZipCode" class="step-two-form__label">Zip Code<b class="red">*</b>:</label>
-                                <input class="text-input" type="text" id="stepTwoZipCode" placeholder="Zip Code">
+                                <label for="stepTwoZipCode required input" class="step-two-form__label">Zip Code<b class="red">*</b>:</label>
+                                <input class="text-input required input" type="text" id="stepTwoZipCode" placeholder="Zip Code">
                             </div>
                             
                             <div class="step-two-form__input">
                                 <label for="stepTwoPhone" class="step-two-form__label">Phone<b class="red">*</b>:</label>
-                                <input class="text-input" type="text" id="stepTwoPhone" placeholder="(012)3456789">
+                                <input class="text-input required input" type="text" id="stepTwoPhone" placeholder="(012)3456789">
                             </div>
                         </div>
 
@@ -188,7 +211,7 @@
                             
                             <div class="step-two-form__input">
                                 <label for="stepTwoState" class="step-two-form__label">State<b class="red">*</b>:</label>
-                                <select class="custom-select" name="" id="stepTwoState">
+                                <select class="custom-select required input" name="" id="stepTwoState">
                                     <option value="">Choose State</option>
                                     <option value="Alabama">Alabama</option>
                                     <option value="Texas">Texas</option>
@@ -196,8 +219,8 @@
                                 </select>
                             </div>
                             <div class="step-two-form__input">
-                                <label for="stepTwoCity" class="step-two-form__label">Email:</label>
-                                <input class="text-input" type="text" id="stepTwoCity" placeholder="name@domain.com">
+                                <label for="stepTwoEmail" class="step-two-form__label">Email:</label>
+                                <input class="text-input" type="text" id="stepTwoEmail" placeholder="name@domain.com">
                             </div>
                             <!-- <div class="step-two-form__input">
                                 <label for="stepTwoShippingMethod" class="step-two-form__label">Shipping Method:</label>
@@ -210,7 +233,7 @@
                             </div> -->
                         </div>
                         <div class="step-two__button-container">
-                            <a href="#" class="btn-blue">Save</a>
+                            <a href="#" class="btn-blue save-customer-info">Save</a>
                         </div>
                     </form>
                     <div class="warning red">
@@ -236,7 +259,7 @@
                                         <b class='red'>*</b>
                                     </h4>
                                     <div class="step-one-header__select position-custom">
-                                        <input class="text-input" type="search" placeholder="Search..." id="stepOneSearch">
+                                        <input class="text-input required input" type="search" placeholder="Search..." id="stepOneSearch">
                                         <span class="info-modal">&#9432; <span class="title-attr">Click to see full list of items and to find necessary product</span></span>
                                         <div class="search-options__block">
                                             <span class="search-option__item">BH1009H</span>
@@ -260,7 +283,7 @@
                                 </div>
                                 <div class="step-one-header__row">
                                     <h4 class="step-one-header__title">Qty<b class="red">*</b></h4>
-                                    <input type="text" placeholder="1" class="step-one-header__btn"/>
+                                    <input id='itemQty' type="text" placeholder="1" class="step-one-header__btn required input"/>
                                 </div>
                                 <div class="step-one-header__row">
                                     <h4 class="step-one-header__title">Unit price</h4>
@@ -272,7 +295,7 @@
                                 </div>
                                 <div class="step-one-header__row">
                                     <h4 class="step-one-header__title"></h4>
-                                    <a href="#" class="btn-blue">
+                                    <a href="#" class="btn-blue add-item">
                                         Add
                                     </a>
                                 </div>
@@ -293,7 +316,7 @@
                                     <div class="step-one-table__row">Ext. Price</div>
                                     <div class="step-one-table__row">Manage</div>
                                 </header>
-                                <div class="step-one-table__col">
+                                <div class="step-one-table__col warning-bordered">
                                     <div class="step-one-table__value">Enter text</div>
                                     <div class="step-one-table__value">Enter text</div>
                                     <div class="step-one-table__value">
@@ -312,7 +335,9 @@
                                         <img class='step-one__manage' data-func='edit' title='Edit' src="img/svg/edit.svg" alt="edit">
                                         <img class='step-one__manage' data-func='delete' title='Delete' src="img/svg/delete.svg" alt="delete">
                                     </div>
+                                    <span class='out-of-stock'>Maximum <span class='count'>10</span> items available current time.</span>
                                 </div>
+                                
                                 <div class="step-one-table__col">
                                     <div class="step-one-table__value">Enter text</div>
                                     <div class="step-one-table__value">Enter text</div>
@@ -385,7 +410,8 @@
                             </a>
                         </div>
                         <div class="step-two__button-container">
-                            <a href="step-two.html" class="btn-blue">Submit Order</a>
+                            <a href="#" class="btn-blue submit__order">Submit Order</a>
+                            <!-- SUBMIT ORDER FUNCTION LOACTED IN JS/SCRIPT.JS -->
                         </div>
                     </div>
                 </div>

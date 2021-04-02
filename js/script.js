@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  function headerFoo(){
+  function headerFoo(){ // HEADER MOBILE MENU DISPLAY AND COLLAPSE
     $(".header__nav").toggleClass("active-m");
     if ($(".header__nav").hasClass("active-m")) {
       $(".header__nav").css({ display: "flex" });
@@ -78,21 +78,23 @@ $(document).ready(function () {
       e.stopPropagation();
     });
 
-    $('img[data-func="plus"]').click(function(){
+    $('img[data-func="plus"]').click(function(){ // STEP ONE EDIT ITEM PLUS
       let input = $(this).parent().siblings('input.qty-input');
       let val = Number(input.val())
-      input.val(val+1)
+      val +=1
+      input.val(val)
     })
 
-    $('img[data-func="minus"]').click(function(){
+    $('img[data-func="minus"]').click(function(){ // STEP ONE EDIT ITEM MINUS
       let input = $(this).parent().siblings('input.qty-input');
       let val = Number(input.val())
       if(val > 1){
-        input.val(val-1)
+        val -=1
+        input.val(val)
       }
     })
 
-    $('img[data-func="edit"]').click(function(){
+    $('img[data-func="edit"]').click(function(){ // STEP ONE EDIT ITEM (PENCIL ICON)
       let controls = $(this).parents('.step-one-table__col').find('.controls');
       let qtyForm = $(this).parents('.step-one-table__col').find('.qty-input');
       controls.toggleClass('controls-hidden');
@@ -106,7 +108,7 @@ $(document).ready(function () {
       }
     })
 
-    $('.step-one__manage-link').click(function(e){
+    $('.step-one__manage-link').click(function(e){ // STEP ONE EDIT ITEM 'SAVE' LINK
       e.preventDefault();
       let controls = $(this).parents('.step-one-table__col').find('.controls');
       let qtyForm = $(this).parents('.step-one-table__col').find('.qty-input');
@@ -116,7 +118,7 @@ $(document).ready(function () {
       qtyForm.attr('readonly', 'readonly');
     })
 
-    $('img[data-func="delete"]').click(function(){
+    $('img[data-func="delete"]').click(function(){ // STEP ONE DELETE ITEM
       let listItem = $(this).parents('.step-one-table__col');
       listItem.slideUp(250);
       setTimeout(()=>listItem.remove(), 1000);
@@ -124,14 +126,114 @@ $(document).ready(function () {
       //do something
     })
  
-    $('#infoModalClose').click(function(){
+    $('#infoModalClose').click(function(){ // STEP ONE - ITEM SEARCH KNOW MORE ICON/DISPLAY MODAL
       $('.item-info__modal').animate({'opacity':'0'}, 150)
       $('.item-info__modal').css({'display':'none'});
     })
 
-    $('span.info-modal').click(function(){
+    $('span.info-modal').click(function(){ // STEP ONE - ITEM SEARCH KNOW MORE ICON/HIDE MODAL
       $('.item-info__modal').css('display', 'flex');
       $('.item-info__modal').animate({'opacity':'1'}, 150)
+    })
+
+    const customerInfo = {
+      poNumber: $('.po-number__num'),
+      name: $('#stepTwoName'),
+      lastName: $('#stepTwoLastName'),
+      adress:$('#stepTwoAddress1'),
+      country: $('#stepTwoCountry'),
+      zipCode: $('#stepTwoZipCode'),
+      state: $('#stepTwoState'),
+      city: $('#stepTwoCity'),
+      phone: $('#stepTwoPhone'),
+
+      //ADD ITEM FIELDS
+      item: $('#stepOneSearch'),
+      itemQty: $('#itemQty')
+    }
+
+    $('.add-item').click(function(event){ // ADD ITEM FUNCTION
+      event.preventDefault();
+      if(!customerInfo.item.val() || !customerInfo.itemQty.val()){
+        $('.warning__notification').css('display','block');
+        $('.warning__inner.required.fields h2').css('display','inline');
+        $('body,html').animate({scrollTop: 0}, 600);
+        if(!customerInfo.item.val()){
+          customerInfo.item.addClass('required-placeholder-red');
+        }
+        if(!customerInfo.itemQty.val()){
+          customerInfo.itemQty.addClass('required-placeholder-red');
+        }
+      } else{
+        //DO SOMETHING
+      }
+    })
+
+    $('.save-customer-info').click(function(event){ //SAVE CUSTOMER INFO FUNCTION
+      event.preventDefault();
+      $('.required.input, .po-number__num').removeClass('required-placeholder-red');
+      if(!customerInfo.poNumber.val() || !customerInfo.name.val() || !customerInfo.lastName.val() || !customerInfo.adress.val() || !customerInfo.country.val() || !customerInfo.zipCode.val() || !customerInfo.state.val() || !customerInfo.state.val() || !customerInfo.city.val() || !customerInfo.phone.val()){
+        $('.warning__notification').css('display','block');
+        $('.warning__inner.required.fields h2').css('display','inline');
+        $('body,html').animate({scrollTop: 0}, 600);
+        if(!customerInfo.poNumber.val()){
+          customerInfo.poNumber.addClass('required-placeholder-red');
+        }
+        if(!customerInfo.phone.val()){
+          customerInfo.phone.addClass('required-placeholder-red');
+        }
+        if(!customerInfo.city.val()){
+          customerInfo.city.addClass('required-placeholder-red');
+        }
+        if(!customerInfo.state.val()){
+          customerInfo.state.addClass('required-placeholder-red');
+        }
+        if(!customerInfo.state.val()){
+          customerInfo.state.addClass('required-placeholder-red');
+        }
+        if(!customerInfo.zipCode.val()){
+          customerInfo.zipCode.addClass('required-placeholder-red');
+        }
+        if(!customerInfo.name.val()){
+          customerInfo.name.addClass('required-placeholder-red');
+        }
+        if(!customerInfo.lastName.val()){
+          customerInfo.lastName.addClass('required-placeholder-red');
+        }
+        if (!customerInfo.adress.val()){
+          customerInfo.adress.addClass('required-placeholder-red');
+        }
+        if (!customerInfo.country.val()){
+          customerInfo.country.addClass('required-placeholder-red');
+        }
+      } else {
+        $('.warning__notification').css('display','none');
+        $('.warning__inner.required.fields h2').css('display','none');
+        // SEND FORM 
+      }
+    })
+
+    $('.submit__order').click(function(event){ // SUBMIT ORDER - 1ST STEP
+      const availableQty = 5; // QUANTITY OF AVAILABLE ITEMS
+      event.preventDefault();
+      $('.step-one-table__col').removeClass('warning-bordered')
+      if(true){ //CATCHING ERROR
+
+        $('.warning__notification').css('display','block');
+        $('.warning__inner.unavailable h2, .warning__inner.unavailable p').css('display','block');
+        $('body,html').animate({scrollTop: 0}, 600);
+
+        $('.step-one-table__col').css('margin-bottom','20px')
+        $('.step-one-table__col:nth-child(3)')
+        .append(`
+          <span class='out-of-stock'>
+            Maximum <span class='count'>${availableQty}</span> items available current time.
+          </span>
+        `)
+        $('.step-one-table__col:nth-child(3)').addClass('warning-bordered').css('margin-bottom','20px');
+      } else { //FORM VALIDATED
+        //SEND FORM
+      }
     })
 
 
