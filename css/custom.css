@@ -11,6 +11,147 @@ a {
   transition: .3s;
 } */
 
+
+/* SUGGESTION MODAL BEGIN */
+
+#suggestion-modal{
+  opacity: 0;
+  display: none;
+}
+
+.suggestion__modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.suggestion__modal .suggestion__modal-body{
+  background-color: #fff;
+  padding: 15px 30px;
+  min-width: 600px;
+  max-width: 100%;
+  position: relative;
+  border-radius: 1.5rem;
+}
+
+.suggestion__modal-close{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.suggestion__modal-content{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.suggestion-field{
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+  border-radius: .4rem;
+  margin: 10px 0;
+}
+
+.suggestion-field.single{
+  background-color: #F3F3F3;
+  position: relative;
+}
+
+.suggestion-calendar{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.suggestion-field .field-label{
+  padding: 2rem;
+  border-radius: .4rem;
+  max-height: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3183EE;
+  color: #fff;
+  width: 30%;
+}
+
+.suggestion-field .field-content{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
+  padding-right: 0;
+  width: 69%;
+}
+
+.suggestion-field .field-content select{
+  outline: none;
+  background-color: transparent;
+  width: 100%;
+  border: none;
+}
+
+.suggestion-field .field-content textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #bbb;
+  border-radius: .4rem;
+}
+
+.suggestion-field.top{
+  max-width: 60%;
+}
+
+.suggestion__modal-content h3{
+  border-bottom: 2px solid #B3B3B3;
+  padding-bottom: .5rem;
+  margin-bottom: 1rem;
+  font-weight: 550;
+  font-size: 18px;
+}
+
+@media (max-width: 768px){
+  .suggestion__modal .suggestion__modal-body{
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .suggestion-field.top{
+    max-width: 100%;
+  }
+}
+@media (max-width: 480px){
+  .field-label.suggestion{
+    margin-bottom: 10px;
+  }
+  .field-content.suggestion{
+    width: 100%;
+  }
+}
+@media (max-width: 400px){
+  .suggestion__modal .suggestion__modal-body{
+    border-radius: 0;
+  }
+  .suggestion__modal *{
+    font-size: .95em;
+  }
+  .suggestion-field .field-content select{
+    width: 140px;
+  }
+}
+
+/* SUGGESTION MODAL END */
+
 @media (max-width: 991.98px) {
   .payment-modal__container {
     min-width: 100% !important;

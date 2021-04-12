@@ -236,6 +236,18 @@ $(document).ready(function () {
       }
     })
 
+    const date = new Date();
+    $('#username').text( $('.header__name .header__user').text() );
+    $('#now').text(` ${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()} `);
+
+    $('#suggestion').click(function(){
+      $('#suggestion-modal').css('display','flex')
+      .animate({'opacity':'1'}, 150);
+    })
+    $('.desc-modal__close').click(function(){
+      $('#suggestion-modal').animate({'opacity':'0'}, 150).css('display','none');
+    })
+
 
  const stepOneDesc = $("#stepOneDesc");
  const descModal = $(".desc-modal");

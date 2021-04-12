@@ -19,6 +19,44 @@
 
 <body>
   <div class="page">
+    <div class="suggestion__modal" id='suggestion-modal'>
+      <div class="suggestion__modal-body">
+        <div class="suggestion__modal-content">
+          <div class="suggestion__modal-close">
+            <img class="desc-modal__close" src="img/account/exit-icon.svg" alt="">
+          </div>
+          <h3>Make a Suggestion</h3>
+          <div class="suggestion-field top single">
+            <div class="field-label">Date:</div>
+            <div class="field-content">
+              <span id='now'>Loading...</span>
+              <img class='suggestion-calendar' src="img/svg/calendar.svg" alt="calendar">
+            </div>
+          </div>
+          <div class="suggestion-field top single">
+            <div class="field-label">Username:</div>
+            <div class="field-content" id='username'>Loading...</div>
+          </div>
+          <div class="suggestion-field top single">
+            <div class="field-label">Section:</div>
+            <div class="field-content">
+              <select name="suggestion-section" id="suggestionSection">
+                <option value="">Choose section</option>
+                <option value="General">General</option>
+                <option value="Orders">Orders</option>
+                <option value="Account">Account</option>
+              </select>
+            </div>
+          </div>
+          <div class="suggestion-field">
+            <div class="field-label suggestion">Suggestion:</div>
+            <div class="field-content suggestion">
+              <textarea name="suggestion-content" id="suggestionContent" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <header class="header">
       <div class="header__container">
         <div class="header__burger d-none">
@@ -73,6 +111,7 @@
                   <div class="header-dropdown__content">
 
                     <a href="#" class="header-dropdown__link">Personal account</a>
+                    <a href="#" class="header-dropdown__link" id='suggestion'>Make a Suggestion</a>
                     <a href="#" class="header-dropdown__link danger">Log out</a>
                   </div>
                 </div>
