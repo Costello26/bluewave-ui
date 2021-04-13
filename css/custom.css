@@ -19,6 +19,14 @@ a {
   display: none;
 }
 
+#suggestion-modal *{
+  font-size: 1.4rem;
+}
+
+#suggestion-modal .field-label{
+  font-weight: 500;
+}
+
 .suggestion__modal{
   position: fixed;
   top: 0;
@@ -62,7 +70,7 @@ a {
 }
 
 .suggestion-field.single{
-  background-color: #F3F3F3;
+  /* background-color: #F3F3F3; */
   position: relative;
 }
 
@@ -81,9 +89,9 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #3183EE;
+  background-color: #42a4f0;
   color: #fff;
-  width: 30%;
+  width: 20%;
 }
 
 .suggestion-field .field-content{
@@ -95,10 +103,43 @@ a {
   width: 69%;
 }
 
+.field-content.suggestion{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.field-content.suggestion .send-button{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px 0;
+}
+
+.field-content.suggestion .send-button button{
+  padding: 1rem 1.5rem;
+  border-radius: .4rem;
+  max-height: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #42a4f0;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+.top .field-content{
+  max-width: 50%;
+  background-color: #F3F3F3;
+  border-top-right-radius: .4rem;
+  border-bottom-right-radius: .4rem;
+}
+
 .suggestion-field .field-content select{
   outline: none;
   background-color: transparent;
-  width: 100%;
+  width: 95%;
   border: none;
 }
 
@@ -110,7 +151,7 @@ a {
 }
 
 .suggestion-field.top{
-  max-width: 60%;
+  max-width: 100%;
 }
 
 .suggestion__modal-content h3{
@@ -136,6 +177,12 @@ a {
   }
   .field-content.suggestion{
     width: 100%;
+  }
+  .suggestion-field .field-label{
+    width: 40%;
+  }
+  .top .field-content{
+    width: 60%;
   }
 }
 @media (max-width: 400px){
